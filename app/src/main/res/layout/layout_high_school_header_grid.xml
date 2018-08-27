@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="22dp"
+        android:paddingTop="24dp">
+
+        <TextView
+            android:id="@+id/tv_home_school"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="8dp"
+            android:drawableTop="@drawable/ic_grid_school"
+            android:gravity="center"
+            android:text="院校库"
+            android:textColor="@color/app_text_color1"
+            android:textSize="@dimen/app_text_size4" />
+
+        <TextView
+            android:id="@+id/tv_home_rank"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="8dp"
+            android:drawableTop="@drawable/ic_grid_rank"
+            android:gravity="center"
+            android:text="排行榜"
+            android:textColor="@color/app_text_color1"
+            android:textSize="@dimen/app_text_size4" />
+
+        <TextView
+            android:id="@+id/tv_home_special"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="8dp"
+            android:drawableTop="@drawable/ic_grid_spe"
+            android:gravity="center"
+            android:text="专业库"
+            android:textColor="@color/app_text_color1"
+            android:textSize="@dimen/app_text_size4" />
+
+        <TextView
+            android:id="@+id/tv_home_topic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="8dp"
+            android:drawableTop="@drawable/ic_grid_topic"
+            android:gravity="center"
+            android:text="留学专题"
+            android:textColor="@color/app_text_color1"
+            android:textSize="@dimen/app_text_size4" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="22dp">
+
+        <TextView
+            android:id="@+id/tv_abroad_qa"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="8dp"
+            android:drawableTop="@drawable/ic_grid_qa"
+            android:gravity="center"
+            android:text="留学问答"
+            android:textColor="@color/app_text_color1"
+            android:textSize="@dimen/app_text_size4" />
+
+        <TextView
+            android:id="@+id/tv_home_srt_spe"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="8dp"
+            android:drawableTop="@drawable/ic_grid_srt_spe"
+            android:gravity="center"
+            android:text="智能选专业"
+            android:textColor="@color/app_text_color1"
+            android:textSize="@dimen/app_text_size4" />
+
+        <TextView
+            android:id="@+id/tv_home_activity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="8dp"
+            android:drawableTop="@drawable/ic_grid_activity"
+            android:gravity="center"
+            android:text="活动库"
+            android:textColor="@color/app_text_color1"
+            android:textSize="@dimen/app_text_size4" />
+        <!-- 占位-->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+    </LinearLayout>
+</LinearLayout>

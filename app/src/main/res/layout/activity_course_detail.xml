@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context="com.smartstudy.xxd.ui.activity.CourseDetailActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/layout_play_video"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding_course_h" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp">
+
+            <com.smartstudy.commonlib.ui.customview.PagerSlidingTabStrip
+                android:id="@+id/tabs_course"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:textColor="@color/app_text_color2"
+                android:textSize="15sp"
+                app:pstsDividerColor="@color/transparent"
+                app:pstsIndicatorColor="@color/app_main_color"
+                app:pstsIndicatorHeight="2dp"
+                app:pstsScaleZoomMax="0.1"
+                app:pstsShouldExpand="true"
+                app:pstsSmoothScrollWhenClickTab="false"
+                app:pstsTextSelectedColor="@color/app_main_color"
+                app:pstsUnderlineColor="@color/white" />
+        </LinearLayout>
+
+        <View style="@style/horizontal_line" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager_course"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/main_bg" />
+    </LinearLayout>
+</RelativeLayout>

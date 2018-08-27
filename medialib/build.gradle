@@ -1,0 +1,29 @@
+apply plugin: rootProject.ext.plugins.library
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+    defaultConfig {
+        multiDexEnabled true
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+
+    }
+    packagingOptions {
+        exclude 'typedefs.txt'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation rootProject.ext.dependencies.support
+    implementation rootProject.ext.dependencies.ijkjava
+    implementation rootProject.ext.dependencies.ijkx86
+    implementation rootProject.ext.dependencies.ijkv7
+    implementation rootProject.ext.dependencies.ijkv5
+
+    implementation project(':common:baselib')
+    implementation project(':permissionlib')
+}

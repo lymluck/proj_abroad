@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_diaglog"
+    android:orientation="vertical"
+    android:paddingTop="21dp">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="titile"
+        android:textColor="@color/app_text_color2"
+        android:textSize="@dimen/app_text_size1" />
+
+    <LinearLayout
+        android:id="@+id/cont_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_select_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="content"
+            android:textColor="@color/exam_date_color"
+            android:textSize="@dimen/app_text_size4" />
+
+        <View
+            android:id="@+id/line"
+            style="@style/horizontal_line"
+            android:layout_marginTop="9dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_has_join_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:gravity="center"
+            android:text="content"
+            android:textColor="@color/app_text_color2"
+            android:textSize="@dimen/app_text_size3"
+            android:visibility="gone" />
+
+        <com.smartstudy.commonlib.ui.customview.MaxHeightableScrollView
+            android:id="@+id/msv_join_dates"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/ll_join_dates"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </com.smartstudy.commonlib.ui.customview.MaxHeightableScrollView>
+
+        <TextView
+            android:id="@+id/tv_select_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="content"
+            android:textColor="@color/app_text_color"
+            android:textSize="@dimen/app_text_size5" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/negative_btn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/app_basicdialog_btnh"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn_lb_radius"
+            android:gravity="center"
+            android:text="button_2"
+            android:textColor="@drawable/text_cancel_color"
+            android:textSize="@dimen/app_text_size1" />
+
+        <Button
+            android:id="@+id/positive_btn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/app_basicdialog_btnh"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn_rb_radius"
+            android:gravity="center"
+            android:text="button_1"
+            android:textColor="@color/text_selected_color"
+            android:textSize="@dimen/app_text_size1" />
+    </LinearLayout>
+
+</LinearLayout>

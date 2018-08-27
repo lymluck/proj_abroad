@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+
+    <include
+        android:id="@+id/my_top_clip"
+        layout="@layout/app_top_default" />
+
+    <com.smartstudy.commonlib.ui.customview.clipimagelayout.ClipImageLayout
+        android:id="@+id/id_clipImageLayout_circle"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/my_top_clip"
+        android:tag="circle"
+        android:visibility="gone" />
+
+    <com.smartstudy.commonlib.ui.customview.clipimagelayout.ClipImageLayout
+        android:id="@+id/id_clipImageLayout_square"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/my_top_clip"
+        android:tag="square"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_botom"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black20">
+
+        <Button
+            android:id="@+id/id_action_clip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:background="@null"
+            android:padding="5dp"
+            android:text="确 定"
+            android:textColor="#18B4ED"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

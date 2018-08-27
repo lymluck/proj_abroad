@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="egscore">
+        <item>语言成绩</item>
+        <item>TOEFL成绩</item>
+        <item>IELTS成绩</item>
+    </string-array>
+    <string-array name="bkscore">
+        <item>标准化成绩</item>
+        <item>SAT成绩</item>
+        <item>ACT成绩</item>
+    </string-array>
+    <string-array name="shscore">
+        <item>标准化成绩</item>
+        <item>GRE成绩</item>
+        <item>GMAT成绩</item>
+    </string-array>
+</resources>

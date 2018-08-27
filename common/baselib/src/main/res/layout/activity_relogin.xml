@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black15">
+
+    <LinearLayout
+        android:id="@+id/llyt_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_diaglog"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="@string/logout_notify"
+            android:textColor="@color/app_main_color"
+            android:textSize="@dimen/app_text_size1" />
+
+        <View
+            style="@style/horizontal_line"
+            android:layout_height="1px" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:padding="25dp"
+            android:text="@string/loginout_msg"
+            android:textColor="@color/app_text_title_color"
+            android:textSize="@dimen/app_text_size1" />
+
+        <Button
+            android:id="@+id/btn_relogin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_basicdialog_btnh"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn_wm_lrb_radius"
+            android:gravity="center"
+            android:text="@string/relogin"
+            android:textColor="@color/text_selected_color"
+            android:textSize="@dimen/app_text_size1" />
+
+    </LinearLayout>
+
+</RelativeLayout>

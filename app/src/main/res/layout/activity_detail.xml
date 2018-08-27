@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".ui.activity.ActivityDetailActivity">
+
+    <include layout="@layout/app_top_default" />
+
+    <com.smartstudy.commonlib.ui.customview.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingBottom="24dp"
+            android:paddingLeft="16dp"
+            android:visibility="gone"
+            android:paddingRight="16dp" />
+    </com.smartstudy.commonlib.ui.customview.ReboundScrollView>
+
+    <TextView
+        android:id="@+id/btn_call"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_btnh"
+        android:background="@drawable/bg_app_btn"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="我有兴趣，电话咨询"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:textSize="@dimen/app_textsize" />
+
+</LinearLayout>

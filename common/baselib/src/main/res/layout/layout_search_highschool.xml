@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/simple_item_bg"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/llyt_type_name"
+        layout="@layout/item_home_search_title"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tv_highschool_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/app_text_color2"
+            android:textSize="@dimen/app_text_size2" />
+
+        <TextView
+            android:id="@+id/tv_highschool_egname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/app_text_color"
+            android:textSize="@dimen/app_text_size4" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line_highschool"
+        style="@style/horizontal_line"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" />
+</LinearLayout>

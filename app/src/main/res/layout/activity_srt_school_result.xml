@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.smartstudy.xxd.ui.activity.SrtSchoolResultActivity">
+
+    <include layout="@layout/app_top_default" />
+
+    <com.smartstudy.commonlib.ui.customview.slidinglayout.SlidingLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rclv_school_rlt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.smartstudy.commonlib.ui.customview.slidinglayout.SlidingLayout>
+
+    <View style="@style/horizontal_line" />
+
+    <LinearLayout
+        android:id="@+id/llyt_menu"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_share"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/ic_share"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:text="分享"
+            android:textColor="@color/app_main_color"
+            android:textSize="@dimen/app_text_size6" />
+
+        <TextView
+            android:id="@+id/tv_add"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/ic_add_school"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:text="一键加入选校"
+            android:textColor="@color/app_main_color"
+            android:textSize="@dimen/app_text_size6" />
+
+        <TextView
+            android:id="@+id/tv_ask"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/ic_meiqia_ask"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:text="在线咨询"
+            android:textColor="@color/app_main_color"
+            android:textSize="@dimen/app_text_size6" />
+
+    </LinearLayout>
+</LinearLayout>

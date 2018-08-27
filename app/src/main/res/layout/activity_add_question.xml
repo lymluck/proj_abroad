@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.smartstudy.xxd.ui.activity.AddQuestionActivity">
+
+    <include layout="@layout/app_top_default" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llyt_intent"
+            style="@style/clickable_simple_item_llyt">
+
+            <TextView
+                android:layout_width="@dimen/myinfo_left_txt_w"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="意向国家"
+                android:textColor="@color/app_text_color"
+                android:textSize="@dimen/app_textsize" />
+
+            <TextView
+                android:id="@+id/tv_intent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/app_text_color4"
+                android:textSize="@dimen/app_textsize" />
+
+            <ImageView
+                android:id="@+id/iv_intent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_go_to" />
+        </LinearLayout>
+
+        <View
+            style="@style/horizontal_line"
+            android:layout_marginLeft="@dimen/simple_item_paddingl" />
+
+        <LinearLayout
+            android:id="@+id/llyt_apply_project"
+            style="@style/clickable_simple_item_llyt">
+
+            <TextView
+                android:layout_width="@dimen/myinfo_left_txt_w"
+                android:layout_height="wrap_content"
+                android:text="申请项目"
+                android:textColor="@color/app_text_color"
+                android:textSize="@dimen/app_textsize" />
+
+            <TextView
+                android:id="@+id/tv_apply_project"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/app_text_color4"
+                android:textSize="@dimen/app_textsize" />
+
+            <ImageView
+                android:id="@+id/iv_apply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_go_to" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_qa"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/white"
+        android:gravity="start"
+        android:hint="@string/hint_add_question"
+        android:lineSpacingExtra="3dp"
+        android:padding="16dp"
+        android:textColor="@color/app_text_color2"
+        android:textColorHint="@color/app_text_color3"
+        android:textCursorDrawable="@null"
+        android:textSize="@dimen/app_text_size2" />
+</LinearLayout>

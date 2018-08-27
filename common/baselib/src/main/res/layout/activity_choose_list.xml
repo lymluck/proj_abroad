@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_top_default" />
+
+    <com.smartstudy.commonlib.ui.customview.slidinglayout.SlidingLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcv_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.smartstudy.commonlib.ui.customview.slidinglayout.SlidingLayout>
+
+    <TextView
+        android:id="@+id/tv_multi_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="*可多选"
+        android:textColor="@color/app_text_color5"
+        android:textSize="@dimen/app_text_size3"
+        android:visibility="gone" />
+</LinearLayout>

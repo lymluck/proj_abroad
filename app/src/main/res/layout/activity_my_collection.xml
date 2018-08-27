@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.smartstudy.xxd.ui.activity.MyCollectionActivity">
+
+    <include layout="@layout/app_top_default" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srlt_collection"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.smartstudy.commonlib.ui.customview.LoadMoreRecyclerView
+            android:id="@+id/rclv_collection"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

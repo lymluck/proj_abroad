@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_diaglog"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:text="评价"
+            android:textColor="#26343F"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/iv_cancel"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_cha" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#E4E5E6" />
+
+    <com.smartstudy.commonlib.ui.customview.RatingBar
+        android:id="@+id/rb_course_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="28dp"
+        android:layout_marginTop="24dp"
+        app:starCount="5"
+        app:starEmpty="@drawable/ic_star_gray"
+        app:starFill="@drawable/ic_star_blue"
+        app:starHalf="@drawable/ic_star_half"
+        app:starImageSize="29dp"
+        app:starPadding="10dp"
+        app:starStep="0"
+        app:stepSize="Full" />
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="-16dp"
+        android:textColor="@color/app_main_color"
+        android:textSize="@dimen/app_text_size3" />
+
+    <EditText
+        android:id="@+id/et_msg"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/commom_search_top_bg"
+        android:gravity="left|top"
+        android:hint="请尽可能详细地描述您的问题"
+        android:padding="12dp"
+        android:textColor="@color/app_text_color2"
+        android:textColorHint="@color/app_text_color3"
+        android:textCursorDrawable="@null"
+        android:textSize="@dimen/app_text_size3" />
+
+    <Button
+        android:id="@+id/btn_commit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_raduis_btn_main"
+        android:enabled="false"
+        android:text="提交评价"
+        android:textColor="@color/white"
+        android:textSize="@dimen/app_textsize" />
+</LinearLayout>

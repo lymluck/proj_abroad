@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/item_school"
+        layout="@layout/layout_homesearch_school"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/item_highschool"
+        layout="@layout/layout_search_highschool"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/item_course"
+        layout="@layout/item_course_search"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/item_news"
+        layout="@layout/layout_homesearch_news"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/item_qa"
+        layout="@layout/layout_homesearch_qa"
+        android:visibility="gone" />
+</LinearLayout>

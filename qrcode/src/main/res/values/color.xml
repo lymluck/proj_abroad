@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+    <color name="top_bg_color">#ffffffff</color>
+    <!--app头部中间标题字体颜色 -->
+    <color name="topcentertext">#ff333333</color>
+</resources>

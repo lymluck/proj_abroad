@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 全局通栏按钮背景样式 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="#E46F3D" />
+            <!-- 矩形的圆角半径 -->
+            <corners android:radius="6dp" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="#FE7C44" />
+
+            <corners android:radius="6dp" />
+
+        </shape>
+    </item>
+
+</selector>

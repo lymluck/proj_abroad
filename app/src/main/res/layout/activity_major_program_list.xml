@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".ui.activity.MajorProgramListActivity">
+
+    <include layout="@layout/app_top_default" />
+
+    <LinearLayout
+        android:id="@+id/ll_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="gone">
+
+        <com.smartstudy.commonlib.ui.customview.PagerSlidingTabStrip
+            android:id="@+id/tabs_majors"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_top_tab_h"
+            android:textColor="@color/app_text_color"
+            android:textSize="15sp"
+            app:pstsDividerColor="@color/transparent"
+            app:pstsIndicatorColor="@color/app_main_color"
+            app:pstsIndicatorHeight="2dp"
+            app:pstsIndicatorMargin="@dimen/major_program_tab_indicator_margin"
+            app:pstsScaleZoomMax="0.1"
+            app:pstsSmoothScrollWhenClickTab="false"
+            app:pstsTabPaddingLeftRight="@dimen/major_program_tab_padding"
+            app:pstsTextSelectedColor="@color/app_main_color"
+            app:pstsUnderlineColor="@color/white" />
+    </LinearLayout>
+
+    <View style="@style/horizontal_line" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager_major"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

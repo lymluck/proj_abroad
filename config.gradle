@@ -1,0 +1,44 @@
+ext {
+
+    plugins = [
+            application: 'com.android.application',
+            library    : 'com.android.library',
+            sensors    : 'com.sensorsdata.analytics.android',
+    ]
+
+    android = [
+            compileSdkVersion: 27,
+            buildToolsVersion: "27.0.3",
+            applicationId    : "com.smartstudy.xxd",
+            minSdkVersion    : 15,
+            targetSdkVersion : 27,
+            versionCode      : 2190,
+            versionName      : "2.19.0"
+    ]
+
+    dependencies = [
+            support        : 'com.android.support:appcompat-v7:27.+',
+            design         : 'com.android.support:design:27.+',
+            cardview       : 'com.android.support:cardview-v7:27.+',
+            kenburnsview   : 'com.flaviofaria:kenburnsview:+',
+            glide          : 'com.github.bumptech.glide:glide:4.+',
+            glideprocessor : 'com.github.bumptech.glide:compiler:4.+',
+            nineoldandroids: 'com.nineoldandroids:library:+',
+            fastjson       : 'com.alibaba:fastjson:1.1.68.android',
+            recyclerview   : 'com.android.support:recyclerview-v7:27.+',
+            uapp           : 'com.umeng.sdk:analytics:7.+',
+            ucommon        : 'com.umeng.sdk:common:1.+',
+            palette        : 'com.android.support:palette-v7:27.+',
+            okhttp         : 'com.squareup.okhttp3:okhttp:+',
+            ijkjava        : 'tv.danmaku.ijk.media:ijkplayer-java:+',
+            ijkx86         : 'tv.danmaku.ijk.media:ijkplayer-x86:+',
+            ijkv7          : 'tv.danmaku.ijk.media:ijkplayer-armv7a:+',
+            ijkv5          : 'tv.danmaku.ijk.media:ijkplayer-armv5:+',
+            eventbus       : 'org.greenrobot:eventbus:3.+',
+            javapoet       : 'com.squareup:javapoet:1.+',
+            walle          : 'com.meituan.android.walle:library:+',
+            sensors        : 'com.sensorsdata.analytics.android:SensorsAnalyticsSDK:1.+',
+            lottie         : 'com.airbnb.android:lottie:2.5.1',
+            sophix         : 'com.aliyun.ams:alicloud-android-hotfix:3.+',
+    ]
+}

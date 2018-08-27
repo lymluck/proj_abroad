@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 全局通栏按钮背景样式 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+        <shape>
+            <!-- 填充颜色 -->
+            <solid android:color="@color/item_click_tran20" />
+            <corners android:radius="32dp" />
+            <padding android:left="5dp" android:right="5dp" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="@color/home_search_title_bg" />
+            <corners android:radius="32dp" />
+            <padding android:left="5dp" android:right="5dp" />
+        </shape>
+    </item>
+
+</selector>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.smartstudy.xxd.ui.activity.PerfectUserInfoActivity">
+
+    <include layout="@layout/app_top_default" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="花7秒钟让我们了解你"
+        android:textColor="@color/app_main_color"
+        android:textSize="22sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="2dp"
+        android:text="以让你享受个性化的留学服务"
+        android:textColor="@color/app_text_color3"
+        android:textSize="@dimen/app_text_size2" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rclv_opts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="56dp"
+        android:layout_marginRight="56dp"
+        android:scrollbars="none" />
+
+    <TextView
+        android:id="@+id/tv_country_diff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:drawableLeft="@drawable/ic_intro_blue"
+        android:drawablePadding="6dp"
+        android:text="不知道去哪儿？来看看它们之间的区别吧"
+        android:textColor="@color/app_main_color"
+        android:textSize="@dimen/app_text_size4"
+        android:visibility="gone" />
+</LinearLayout>

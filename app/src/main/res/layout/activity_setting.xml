@@ -1,0 +1,198 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_top_default" />
+
+    <com.smartstudy.commonlib.ui.customview.slidinglayout.SlidingLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                style="@style/simple_item_rlyt"
+                android:layout_marginTop="20dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="消息提醒"
+                    android:textColor="@color/app_text_title_color"
+                    android:textSize="@dimen/app_text_size1" />
+
+                <com.smartstudy.xxd.ui.customview.PushSlideSwitchView
+                    android:id="@+id/view_push_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/llyt_check_vs"
+                    style="@style/clickable_simple_item_llyt">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="版本检测"
+                        android:textColor="@color/app_text_title_color"
+                        android:textSize="@dimen/app_text_size1" />
+
+                    <TextView
+                        android:id="@+id/tv_vs"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:textColor="@color/app_text_color"
+                        android:textSize="@dimen/app_text_size2" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_go_to" />
+
+                </LinearLayout>
+
+                <View
+                    style="@style/horizontal_line"
+                    android:layout_marginLeft="16dp" />
+
+                <LinearLayout
+                    android:id="@+id/llyt_opinion"
+                    style="@style/clickable_simple_item_llyt">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="意见反馈"
+                        android:textColor="@color/app_text_color2"
+                        android:textSize="@dimen/app_text_size1" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_go_to" />
+
+                </LinearLayout>
+
+                <View
+                    style="@style/horizontal_line"
+                    android:layout_marginLeft="16dp" />
+
+                <LinearLayout
+                    android:id="@+id/llyt_app_share"
+                    style="@style/clickable_simple_item_llyt">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="推荐给好友"
+                        android:textColor="@color/app_text_title_color"
+                        android:textSize="@dimen/app_text_size1" />
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_go_to" />
+
+                </LinearLayout>
+
+                <View
+                    style="@style/horizontal_line"
+                    android:layout_marginLeft="16dp" />
+
+                <RelativeLayout
+                    android:id="@+id/rlyt_about_us"
+                    style="@style/clickable_simple_item_rlyt">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="关于选校帝"
+                        android:textColor="@color/app_text_title_color"
+                        android:textSize="@dimen/app_text_size1" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_go_to" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llyt_clear_cache"
+                style="@style/clickable_simple_item_llyt"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="清理缓存"
+                    android:textColor="@color/app_text_title_color"
+                    android:textSize="@dimen/app_text_size1" />
+
+                <TextView
+                    android:id="@+id/tv_cache_size"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textColor="@color/app_text_color"
+                    android:textSize="@dimen/app_text_size2" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_go_to" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_exit_login"
+                style="@style/clickable_simple_item_llyt"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="退出登录"
+                    android:textColor="@color/app_text_color"
+                    android:textSize="@dimen/app_text_size1" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.smartstudy.commonlib.ui.customview.slidinglayout.SlidingLayout>
+</LinearLayout>

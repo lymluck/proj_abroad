@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.smartstudy.xxd.ui.fragment.NewsFragment">
+
+    <include
+        android:id="@+id/top_news"
+        layout="@layout/app_top_default" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <com.smartstudy.commonlib.ui.customview.PagerSlidingTabStrip
+            android:id="@+id/tabs_news"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_top_tab_h"
+            android:textColor="@color/app_text_color"
+            android:textSize="15sp"
+            app:pstsDividerColor="@color/transparent"
+            app:pstsIndicatorColor="@color/app_main_color"
+            app:pstsIndicatorHeight="2dp"
+            app:pstsIndicatorMargin="16dp"
+            app:pstsScaleZoomMax="0.1"
+            app:pstsSmoothScrollWhenClickTab="false"
+            app:pstsTextSelectedColor="@color/app_main_color"
+            app:pstsUnderlineColor="@color/white" />
+    </FrameLayout>
+
+    <View style="@style/horizontal_line" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager_news"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

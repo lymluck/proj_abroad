@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/home_top_qa"
+        layout="@layout/app_top_default" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <com.smartstudy.commonlib.ui.customview.PagerSlidingTabStrip
+            android:id="@+id/tabs_qas"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_top_tab_h"
+            android:textColor="@color/app_text_color"
+            android:textSize="15sp"
+            app:pstsDividerColor="@color/transparent"
+            app:pstsIndicatorColor="@color/app_main_color"
+            app:pstsIndicatorHeight="2dp"
+            app:pstsIndicatorMargin="21dp"
+            app:pstsScaleZoomMax="0.1"
+            app:pstsShouldExpand="true"
+            app:pstsSmoothScrollWhenClickTab="false"
+            app:pstsTextAllCaps="true"
+            app:pstsTextSelectedColor="@color/app_main_color"
+            app:pstsUnderlineColor="@color/white" />
+
+        <TextView
+            android:id="@+id/my_qa_red"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_above="@id/tv_tab_me"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_oval_red"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <View style="@style/horizontal_line" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager_qas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
+

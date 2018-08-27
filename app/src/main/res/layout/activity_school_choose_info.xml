@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".ui.activity.SchoolChooseInfoActivity">
+
+    <include layout="@layout/app_top_default" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingLeft="16dp"
+                android:paddingTop="24dp"
+                android:textColor="@color/app_text_color2"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="24dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="24dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@drawable/bg_btn_red_raduis6">
+
+                        <TextView
+                            android:id="@+id/tv_top_school"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:lineSpacingExtra="0dp"
+                            android:lineSpacingMultiplier="1"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tv_top_me"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/ic_choose_school_me"
+                            android:gravity="right"
+                            android:padding="3.5dp"
+                            android:text="我"
+                            android:textColor="@color/white"
+                            android:textSize="10sp"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="12dp"
+                        android:text="冲刺院校"
+                        android:textColor="@color/app_text_color"
+                        android:textSize="@dimen/app_text_size2" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@drawable/bg_btn_blue_raduis6">
+
+                        <TextView
+                            android:id="@+id/tv_middle_school"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:lineSpacingExtra="0dp"
+                            android:lineSpacingMultiplier="1"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tv_middle_me"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/ic_choose_school_me"
+                            android:gravity="right"
+                            android:padding="3.5dp"
+                            android:text="我"
+                            android:textColor="@color/white"
+                            android:textSize="10sp"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="12dp"
+                        android:text="核心院校"
+                        android:textColor="@color/app_text_color"
+                        android:textSize="@dimen/app_text_size2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@drawable/bg_btn_green_raduis6">
+
+                        <TextView
+                            android:id="@+id/tv_bottom_school"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:lineSpacingExtra="0dp"
+                            android:lineSpacingMultiplier="1"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/tv_bottom_me"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/ic_choose_school_me"
+                            android:gravity="right"
+                            android:padding="3.5dp"
+                            android:text="我"
+                            android:textColor="@color/white"
+                            android:textSize="10sp"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="12dp"
+                        android:text="保底院校"
+                        android:textColor="@color/app_text_color"
+                        android:textSize="@dimen/app_text_size2" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llyt_loading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <include layout="@layout/layout_footer_loading" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_ring"
+                android:layout_width="match_parent"
+                android:layout_height="346dp"
+                android:layout_marginTop="12dp"
+                android:background="@color/white"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="24dp"
+                    android:text="意向出国时间："
+                    android:textColor="@color/app_text_color2"
+                    android:textSize="18sp" />
+
+                <com.smartstudy.xxd.ui.customview.RingView
+                    android:id="@+id/ring_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="245dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="70dp" />
+
+                <View
+                    android:id="@+id/v_lt_dot"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginTop="83dp"
+                    android:background="@drawable/bg_oval_country_size1" />
+
+                <TextView
+                    android:id="@+id/tv_lt_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="76dp"
+                    android:layout_toRightOf="@id/v_lt_dot"
+                    android:text="2019年"
+                    android:textColor="@color/app_text_color"
+                    android:textSize="@dimen/app_text_size2" />
+
+                <TextView
+                    android:id="@+id/tv_lt_person"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_lt_year"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@id/v_lt_dot"
+                    android:text=""
+                    android:textColor="@color/app_text_color2"
+                    android:textSize="@dimen/app_text_size2" />
+
+                <RelativeLayout
+                    android:layout_width="86dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="76dp"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/v_rt_dot"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/bg_oval_country_size2"
+                        android:gravity="center" />
+
+                    <TextView
+                        android:id="@+id/tv_rt_year"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_toRightOf="@id/v_rt_dot"
+                        android:text="2018年"
+                        android:textColor="@color/app_text_color"
+                        android:textSize="@dimen/app_text_size2" />
+
+                    <TextView
+                        android:id="@+id/tv_rt_person"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_rt_year"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_toRightOf="@id/v_rt_dot"
+                        android:text=""
+                        android:textColor="@color/app_text_color2"
+                        android:textSize="@dimen/app_text_size2" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginLeft="26dp">
+
+                    <View
+                        android:id="@+id/v_lb_dot"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/bg_oval_country_size4" />
+
+                    <TextView
+                        android:id="@+id/tv_lb_year"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_toRightOf="@id/v_lb_dot"
+                        android:text="2020年"
+                        android:textColor="@color/app_text_color"
+                        android:textSize="@dimen/app_text_size2" />
+
+                    <TextView
+                        android:id="@+id/tv_lb_person"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_lb_year"
+                        android:layout_marginLeft="4dp"
+                        android:layout_toRightOf="@id/v_lb_dot"
+                        android:text="0人"
+                        android:textColor="@color/app_text_color2"
+                        android:textSize="@dimen/app_text_size2" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="86dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="24dp">
+
+                    <View
+                        android:id="@+id/v_rb_dot"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/bg_oval_country_size3" />
+
+                    <TextView
+                        android:id="@+id/tv_rb_year"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:layout_toRightOf="@id/v_rb_dot"
+                        android:text="其他"
+                        android:textColor="@color/app_text_color"
+                        android:textSize="@dimen/app_text_size2" />
+
+                    <TextView
+                        android:id="@+id/tv_rb_person"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv_rb_year"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_toRightOf="@id/v_rb_dot"
+                        android:text="0人"
+                        android:textColor="@color/app_text_color2"
+                        android:textSize="@dimen/app_text_size2" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_school_person"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="24dp"
+                    android:text="他们都选择了该校："
+                    android:textColor="@color/app_text_color2"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_school"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="24dp"
+                    android:text="他们还选择了这些学校："
+                    android:textColor="@color/app_text_color2"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_to_detail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_app_btn"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="查看该校申请信息"
+        android:textColor="@color/white"
+        android:textSize="@dimen/app_textsize" />
+</LinearLayout>

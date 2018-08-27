@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llyt_top_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:descendantFocusability="afterDescendants"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:transitionName="search_top">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:transitionName="top_search">
+
+            <com.smartstudy.commonlib.ui.customview.EditTextWithClear
+                android:id="@+id/searchView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:background="@drawable/search_home_bg"
+                android:cursorVisible="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:paddingLeft="22dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/search_gray"
+                android:transitionName="btn_tr" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/app_top_height"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingLeft="4dp"
+            android:paddingRight="9dp"
+            android:text="@string/cancle"
+            android:textColor="@color/app_main_color"
+            android:textSize="@dimen/app_textsize" />
+    </LinearLayout>
+
+    <View style="@style/horizontal_line" />
+
+    <LinearLayout
+        android:id="@+id/llyt_choose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="40dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/llyt_school"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_choose_school"
+                android:drawablePadding="5dp"
+                android:text="院校"
+                android:textColor="@color/app_text_color"
+                android:textSize="@dimen/app_textsize" />
+        </LinearLayout>
+
+        <View
+            style="@style/vertical_line"
+            android:background="@color/black20" />
+
+        <LinearLayout
+            android:id="@+id/llyt_rank"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_choose_rank"
+                android:drawablePadding="5dp"
+                android:text="排名"
+                android:textColor="@color/app_text_color"
+                android:textSize="@dimen/app_textsize" />
+        </LinearLayout>
+
+        <View
+            style="@style/vertical_line"
+            android:background="@color/black20" />
+
+        <LinearLayout
+            android:id="@+id/llyt_smart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_smart_choose"
+                android:drawablePadding="5dp"
+                android:text="智能选校"
+                android:textColor="@color/app_text_color"
+                android:textSize="@dimen/app_textsize" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srlt_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.smartstudy.commonlib.ui.customview.LoadMoreRecyclerView
+            android:id="@+id/rclv_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

@@ -1,0 +1,92 @@
+apply plugin: rootProject.ext.plugins.application
+//添加 com.sensorsdata.analytics.android 插件
+apply plugin: rootProject.ext.plugins.sensors
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+    defaultConfig {
+        multiDexEnabled true
+        applicationId rootProject.ext.android.applicationId
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi', 'armeabi-v7a', 'x86'
+        }
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = ["moduleName": project.name]
+            }
+        }
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    signingConfigs {
+        release {
+            keyAlias KEY_ALIAS
+            keyPassword KEY_PASSWORD
+            storeFile file(STORE_FILE)
+            storePassword KEYSTORE_PASSWORD
+        }
+    }
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.release
+        }
+        release {
+            zipAlignEnabled true
+            shrinkResources true  // 移除无用的resource文件
+            minifyEnabled true
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+    repositories {
+        maven {
+            // sophix
+            url "http://maven.aliyun.com/nexus/content/repositories/releases"
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.+'
+    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.+'
+    // Optional, if you use support library fragments:
+    debugImplementation 'com.squareup.leakcanary:leakcanary-support-fragment:1.+'
+    implementation rootProject.ext.dependencies.support
+    implementation rootProject.ext.dependencies.design
+    implementation rootProject.ext.dependencies.recyclerview
+    implementation rootProject.ext.dependencies.cardview
+    implementation rootProject.ext.dependencies.kenburnsview
+    implementation rootProject.ext.dependencies.eventbus
+    implementation rootProject.ext.dependencies.fastjson
+    implementation rootProject.ext.dependencies.nineoldandroids
+    implementation rootProject.ext.dependencies.glide
+    annotationProcessor rootProject.ext.dependencies.glideprocessor
+    implementation rootProject.ext.dependencies.sophix
+    implementation rootProject.ext.dependencies.walle
+    implementation rootProject.ext.dependencies.uapp
+    implementation rootProject.ext.dependencies.lottie
+    //添加 Sensors Analytics SDK 依赖
+    implementation rootProject.ext.dependencies.sensors
+    implementation project(':common:baselib')
+    implementation project(':common:thirdsdk')
+    implementation project(':permissionlib')
+    implementation project(':xxdRouter')
+    annotationProcessor project(':xxdCompiler')
+    implementation project(':meiqiasdk')
+    implementation project(':medialib')
+    implementation project(':qrcode')
+}

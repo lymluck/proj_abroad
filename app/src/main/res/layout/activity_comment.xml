@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_top_default" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srt_comment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.smartstudy.commonlib.ui.customview.LoadMoreRecyclerView
+            android:id="@+id/lmrv_column"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:overScrollMode="always"
+            android:scrollbars="none" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <View style="@style/horizontal_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入你的评论"
+            android:maxLines="5"
+            android:inputType="textMultiLine"
+            android:paddingBottom="14dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="15dp"
+            android:textColor="@color/app_text_color2"
+            android:textColorHint="@color/app_text_color3"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/app_text_size3" />
+
+        <TextView
+            android:id="@+id/tv_post"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/bg_qa_posted_grey"
+            android:gravity="center"
+            android:text="发表"
+            android:textColor="@color/qa_post_clor"
+            android:textSize="@dimen/app_text_size3" />
+    </LinearLayout>
+</LinearLayout>

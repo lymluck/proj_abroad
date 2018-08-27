@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_top_default" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/llyt_country"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="6dp"
+                android:drawableRight="@drawable/ic_arrow_down_gray"
+                android:ellipsize="end"
+                android:maxEms="10"
+                android:maxLines="1"
+                android:text="全球"
+                android:textColor="@color/app_text_color2"
+                android:textSize="@dimen/app_text_size2" />
+        </LinearLayout>
+
+        <View
+            style="@style/vertical_line"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="12dp" />
+
+        <LinearLayout
+            android:id="@+id/llyt_school_rank"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_school_rank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="6dp"
+                android:drawableRight="@drawable/ic_arrow_down_gray"
+                android:text="综合排名"
+                android:textColor="@color/app_text_color2"
+                android:textSize="@dimen/app_text_size2" />
+        </LinearLayout>
+
+        <View
+            style="@style/vertical_line"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="12dp" />
+
+        <LinearLayout
+            android:id="@+id/llyt_more_check"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_more_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="6dp"
+                android:drawableRight="@drawable/ic_arrow_down_gray"
+                android:text="更多筛选"
+                android:textColor="@color/app_text_color2"
+                android:textSize="@dimen/app_text_size2" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line_tab"
+        style="@style/horizontal_line" />
+
+    <com.smartstudy.commonlib.ui.customview.LoadMoreRecyclerView
+        android:id="@+id/rclv_schools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" />
+</LinearLayout>

@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_contact_us"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/top_contact_us"
+        layout="@layout/app_top_default" />
+
+    <View style="@style/horizontal_line" />
+
+    <com.smartstudy.commonlib.ui.customview.slidinglayout.SlidingLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="欢迎您提出的宝贵意见和建议，您留下的每个字都会用来提升我们的服务品质。"
+                android:textColor="@color/app_text_color3"
+                android:textSize="@dimen/app_text_size4" />
+
+            <EditText
+                android:id="@+id/et_content"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@color/white"
+                android:gravity="top"
+                android:hint="我的意见..."
+                android:maxLength="250"
+                android:maxLines="50"
+                android:padding="10dp"
+                android:textColor="@color/app_text_color2"
+                android:textColorHint="@color/app_text_color3"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/app_text_size2" />
+
+            <LinearLayout
+                style="@style/simple_item_rlyt"
+                android:layout_marginTop="10dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="联系方式"
+                    android:textColor="@color/app_text_title_color"
+                    android:textSize="@dimen/app_textsize" />
+
+                <EditText
+                    android:id="@+id/et_contact"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:hint="50个字以内(手机号/邮箱)"
+                    android:lines="1"
+                    android:maxLength="50"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/app_text_color2"
+                    android:textColorHint="@color/app_text_color3"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/app_text_size2" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_send"
+                style="@style/app_onebtn"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="提交" />
+        </LinearLayout>
+    </com.smartstudy.commonlib.ui.customview.slidinglayout.SlidingLayout>
+
+</LinearLayout>

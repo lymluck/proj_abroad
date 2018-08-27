@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_recommend"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="10dp">
+
+    <FrameLayout
+        android:id="@+id/fl_intentionally"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-6dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_intentionally"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+        <ImageView
+            android:id="@+id/iv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="-5dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_where_cancel" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_reconmend_cours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-6dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_reconmend_course"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+        <ImageView
+            android:id="@+id/iv_course_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:layout_marginRight="9.8dp"
+            android:layout_marginTop="-5dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_where_cancel" />
+
+        <TextView
+            android:id="@+id/tv_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/padding_course_bottom"
+            android:layout_marginLeft="@dimen/padding_course_left"
+            android:background="@color/black"
+            android:paddingBottom="2dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="2dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/app_text_size2" />
+    </FrameLayout>
+
+
+</LinearLayout>

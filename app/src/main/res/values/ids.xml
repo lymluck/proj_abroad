@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="item_hot_rank_1" type="id" />
+    <item name="item_hot_rank_2" type="id" />
+    <item name="item_hot_rank_3" type="id" />
+    <item name="item_hot_rank_4" type="id" />
+    <item name="item_hot_rank_5" type="id" />
+    <item name="line_base" type="id" />
+</resources>

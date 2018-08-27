@@ -1,0 +1,480 @@
+<com.smartstudy.commonlib.ui.customview.ReboundScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llyt_my_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:clickable="true">
+
+            <ImageView
+                android:id="@+id/iv_user_pic"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginBottom="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_person_default" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="24dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/app_text_color2"
+                    android:textSize="26sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="你的留学信息都在这里"
+                    android:textColor="@color/app_text_color3"
+                    android:textSize="@dimen/app_text_size3" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/ic_go_to" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:text="常用工具"
+                android:textColor="#949BA1"
+                android:textSize="16sp" />
+
+            <View
+                style="@style/horizontal_line"
+                android:layout_marginLeft="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_smart_profession"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="12dp"
+                    android:drawableTop="@drawable/ic_profession"
+                    android:gravity="center"
+                    android:paddingBottom="18dp"
+                    android:paddingTop="18dp"
+                    android:text="智能选专业"
+                    android:textColor="#58646E"
+                    android:textSize="12sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_smart_school"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="12dp"
+                    android:drawableTop="@drawable/ic_smart_choose_school"
+                    android:gravity="center"
+                    android:paddingBottom="18dp"
+                    android:paddingTop="18dp"
+                    android:text="智能选校"
+                    android:textColor="#58646E"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_gpa"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="12dp"
+                    android:drawableTop="@drawable/ic_gpa_calculation"
+                    android:gravity="center"
+                    android:paddingBottom="18dp"
+                    android:paddingTop="18dp"
+                    android:text="GPA计算器"
+                    android:textColor="#58646E"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_study_plan"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="12dp"
+                    android:drawableTop="@drawable/ic_study_plan"
+                    android:gravity="center"
+                    android:paddingBottom="18dp"
+                    android:paddingTop="18dp"
+                    android:text="留学规划"
+                    android:textColor="#58646E"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_targe_where"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="12dp"
+                    android:drawableTop="@drawable/ic_targe_where"
+                    android:gravity="center"
+                    android:paddingBottom="18dp"
+                    android:paddingTop="18dp"
+                    android:text="意向国家对比"
+                    android:textColor="#58646E"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_remark_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawablePadding="12dp"
+                    android:drawableTop="@drawable/ic_remark_tool"
+                    android:gravity="center"
+                    android:paddingBottom="18dp"
+                    android:paddingTop="18dp"
+                    android:text="考试时间查询"
+                    android:textColor="#58646E"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:background="@color/main_bg" />
+
+            <RelativeLayout
+                android:id="@+id/rl_abroad_service"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@drawable/simple_item_bg"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/iv_abroad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="24dp"
+                    android:src="@drawable/ic_abroad_service" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_abroad"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="3dp"
+                    android:text="一站式美国留学专家"
+                    android:textColor="@color/app_text_color"
+                    android:textSize="@dimen/app_text_size4" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/img_abroad_service" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:background="@color/main_bg" />
+
+            <LinearLayout
+                android:id="@+id/llyt_study_time_planning"
+                style="@style/clickable_simple_item_llyt">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="我的留学时间规划轴"
+                    android:textColor="@color/app_text_color2"
+                    android:textSize="@dimen/app_text_size1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_go_to" />
+
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/v_study_time_planning"
+                style="@style/horizontal_line"
+                android:layout_marginLeft="16dp" />
+
+            <LinearLayout
+                android:id="@+id/llyt_my_school"
+                style="@style/clickable_simple_item_llyt">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="我的选校"
+                    android:textColor="@color/app_text_color2"
+                    android:textSize="@dimen/app_text_size1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_go_to" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/horizontal_line"
+                android:layout_marginLeft="16dp" />
+
+            <LinearLayout
+                android:id="@+id/llyt_my_colllect"
+                style="@style/clickable_simple_item_llyt">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="我的收藏"
+                    android:textColor="@color/app_text_color2"
+                    android:textSize="@dimen/app_text_size1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_go_to" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:id="@+id/tv_tool"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:text="更多工具"
+                    android:textColor="@color/app_text_color2"
+                    android:textSize="@dimen/app_text_size1" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_tool"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp">
+
+                        <TextView
+                            android:id="@+id/tv_tf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_app_btn_grey1"
+                            android:drawableLeft="@drawable/logo_toefl"
+                            android:drawablePadding="8dp"
+                            android:drawableRight="@drawable/ic_tool_download"
+                            android:gravity="center_vertical"
+                            android:padding="8dp"
+                            android:text="斩托福" />
+
+                        <TextView
+                            android:id="@+id/tv_ys"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:background="@drawable/bg_app_btn_grey1"
+                            android:drawableLeft="@drawable/logo_ietls"
+                            android:drawablePadding="8dp"
+                            android:drawableRight="@drawable/ic_tool_download"
+                            android:gravity="center_vertical"
+                            android:padding="8dp"
+                            android:text="斩雅思" />
+
+                        <TextView
+                            android:id="@+id/tv_msk"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:background="@drawable/bg_app_btn_grey1"
+                            android:drawableLeft="@drawable/logo_msk"
+                            android:drawablePadding="8dp"
+                            android:drawableRight="@drawable/ic_tool_download"
+                            android:gravity="center_vertical"
+                            android:padding="8dp"
+                            android:text="名师课" />
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+            </RelativeLayout>
+
+            <View
+                style="@style/horizontal_line"
+                android:layout_marginLeft="16dp" />
+
+            <LinearLayout
+                android:id="@+id/llyt_community"
+                style="@style/clickable_simple_item_llyt">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="一键加群"
+                    android:textColor="@color/app_text_color2"
+                    android:textSize="@dimen/app_text_size1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_go_to" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/horizontal_line"
+                android:layout_marginLeft="16dp" />
+
+            <RelativeLayout
+                android:id="@+id/rlyt_service"
+                style="@style/clickable_simple_item_rlyt">
+
+                <RelativeLayout
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:id="@+id/tv_meiqia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="客服咨询"
+                        android:textColor="@color/app_text_color2"
+                        android:textSize="@dimen/app_text_size1" />
+
+                    <TextView
+                        android:id="@+id/meiqia_red"
+                        android:layout_width="7dp"
+                        android:layout_height="7dp"
+                        android:layout_above="@id/tv_meiqia"
+                        android:layout_marginBottom="-6dp"
+                        android:layout_toRightOf="@id/tv_meiqia"
+                        android:background="@drawable/bg_oval_red"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_go_to" />
+
+            </RelativeLayout>
+
+            <View
+                style="@style/horizontal_line"
+                android:layout_marginLeft="16dp" />
+
+            <LinearLayout
+                android:id="@+id/llyt_setting"
+                style="@style/clickable_simple_item_llyt">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="设置"
+                    android:textColor="@color/app_text_color2"
+                    android:textSize="@dimen/app_text_size1" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_go_to" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</com.smartstudy.commonlib.ui.customview.ReboundScrollView>
+

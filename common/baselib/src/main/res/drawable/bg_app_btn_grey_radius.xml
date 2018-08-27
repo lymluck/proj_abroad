@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 全局通栏按钮背景样式 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+        <shape>
+
+            <!-- 填充颜色 -->
+            <solid android:color="@color/item_click_tran20" />
+            <corners android:radius="6dp" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="#f1f2f2" />
+            <corners android:radius="6dp" />
+        </shape>
+    </item>
+
+</selector>

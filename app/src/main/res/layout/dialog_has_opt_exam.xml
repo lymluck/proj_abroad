@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_diaglog"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="titile"
+        android:textColor="@color/app_text_color2"
+        android:textSize="@dimen/app_text_size1" />
+
+    <LinearLayout
+        android:id="@+id/cont_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_select_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="content"
+            android:textColor="@color/app_main_color"
+            android:textSize="@dimen/app_text_size4" />
+
+        <TextView
+            android:id="@+id/tv_select_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="content"
+            android:textColor="@color/app_text_color"
+            android:textSize="@dimen/app_text_size5" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/horizontal_line"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:id="@+id/tv_cancle"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/bg_main_btn_no_radius"
+        android:gravity="center"
+        android:text="关闭"
+        android:textColor="@color/text_selected_color"
+        android:textSize="@dimen/app_text_size1" />
+
+    <View style="@style/horizontal_line" />
+
+    <TextView
+        android:id="@+id/tv_delete_exam"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/bg_main_btn_no_radius"
+        android:gravity="center"
+        android:text="取消本次考试计划"
+        android:textColor="@color/text_selected_color"
+        android:textSize="@dimen/app_text_size1" />
+
+    <View style="@style/horizontal_line" />
+
+    <Button
+        android:id="@+id/btn_watch_others"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_basicdialog_btnh"
+        android:layout_weight="1"
+        android:background="@drawable/bg_btn_wm_lrb_radius"
+        android:gravity="center"
+        android:text="看看哪些人正在备考"
+        android:textColor="@color/text_selected_color"
+        android:textSize="@dimen/app_text_size1" />
+
+</LinearLayout>

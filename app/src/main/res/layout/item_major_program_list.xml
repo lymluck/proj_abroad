@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/simple_item_bg"
+    android:clickable="true">
+
+    <TextView
+        android:id="@+id/tv_school_rank"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="13dp"
+        android:background="@color/app_main_color"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="1"
+        android:text="1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/app_text_size4" />
+
+    <LinearLayout
+        android:id="@+id/ll_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="11dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_school_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/app_text_color2"
+            android:textSize="@dimen/app_textsize" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="@color/app_text_color"
+            android:textSize="@dimen/app_text_size4" />
+
+        <TextView
+            android:id="@+id/tv_eg_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="@color/app_text_color"
+            android:textSize="@dimen/app_text_size4" />
+    </LinearLayout>
+</LinearLayout>

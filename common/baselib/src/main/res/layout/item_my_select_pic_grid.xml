@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/photo_item_one"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:background="@color/black"
+        android:drawablePadding="5dp"
+        android:drawableTop="@drawable/capture_pic"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:text="@string/take_photo"
+        android:textColor="@color/white"
+        android:textSize="@dimen/app_text_size3"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/id_item_image"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:id="@+id/llyt_check_pic"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <CheckBox
+            android:id="@+id/child_checkbox"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/pictures_select_icon"
+            android:button="@null" />
+
+    </LinearLayout>
+
+</RelativeLayout>

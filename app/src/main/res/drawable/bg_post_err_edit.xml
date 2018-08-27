@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <!-- 线的宽度，颜色灰色 -->
+            <stroke android:width="0.7dp" android:color="@color/bg_home_search"></stroke>
+            <solid android:color="@color/white" />
+            <corners android:radius="3dp" />
+        </shape>
+    </item>
+
+</selector>

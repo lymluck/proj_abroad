@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/high_school_top"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:paddingLeft="16dp">
+
+    <LinearLayout
+        android:id="@+id/llyt_local_rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24dp"
+        android:background="@drawable/bg_school_rank"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:text="FS关注度"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+
+        <View
+            style="@style/horizontal_line"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_local_rank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="@dimen/app_text_size1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llyt_school_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/llyt_local_rank"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_schoolname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/white"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/tv_egname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/white"
+            android:textSize="@dimen/app_text_size3" />
+
+        <TextView
+            android:id="@+id/tv_addr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:alpha="0.6"
+            android:drawableLeft="@drawable/ic_black_location"
+            android:drawablePadding="4dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/app_text_size4"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</RelativeLayout>

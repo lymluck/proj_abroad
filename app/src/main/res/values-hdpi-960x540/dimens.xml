@@ -1,0 +1,12 @@
+<resources>
+    <dimen name="home_content_h">133dp</dimen> <!-- 首页内容区域高度 -->
+    <dimen name="home_rank_h">66dp</dimen> <!-- 首页内容区域排名区块高度 -->
+    <dimen name="item_course_img_w">125dp</dimen> <!-- 课程列表item图片宽度 -->
+    <dimen name="item_course_img_h">80dp</dimen> <!-- 课程列表item图片高度 -->
+    <dimen name="myinfo_left_txt_w">68dp</dimen> <!-- 我的信息页面左文字宽度 -->
+    <dimen name="padding_course_bottom">40dp</dimen><!--推荐课程提示文字距离下面距离-->
+    <dimen name="padding_course_left">35dp</dimen><!--推荐课程提示文字距离左边距离-->
+    <dimen name="padding_course_h">211dp</dimen> <!-- 课程播放视图高度-->
+    <dimen name="major_program_tab_indicator_margin">12.5dp</dimen> <!-- 研究生热门专业tab线间距 -->
+    <dimen name="major_program_tab_padding">14.2dp</dimen> <!-- 研究生热门专业tab之间间距 -->
+</resources>

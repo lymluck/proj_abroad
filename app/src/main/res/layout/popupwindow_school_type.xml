@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black30"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="16dp"
+        android:text="语言成绩类别"
+        android:textColor="@color/app_text_color2"
+        android:textSize="@dimen/app_text_size2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="16dp"
+        android:paddingLeft="12dp"
+        android:paddingTop="12dp">
+
+        <TextView
+            android:id="@+id/tv_tf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btn_white_raduis5"
+            android:paddingBottom="8dp"
+            android:paddingLeft="27dp"
+            android:paddingRight="27dp"
+            android:paddingTop="8dp"
+            android:text="托福"
+            android:textColor="@color/app_text_color1"
+            android:textSize="@dimen/app_text_size4" />
+
+        <TextView
+            android:id="@+id/tv_ys"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/bg_btn_white_raduis5"
+            android:paddingBottom="8dp"
+            android:paddingLeft="27dp"
+            android:paddingRight="27dp"
+            android:paddingTop="8dp"
+            android:text="雅思"
+            android:textColor="@color/app_text_color1"
+            android:textSize="@dimen/app_text_size4" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <View style="@style/horizontal_line" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llyt_eg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="12dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_eg_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:textColor="@color/app_text_color2"
+            android:textSize="@dimen/app_text_size2" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/lv_eg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:scrollbars="none"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llyt_eg_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:visibility="gone">
+
+        <View style="@style/horizontal_line" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="16dp"
+        android:text="年花费（单位：美元）"
+        android:textColor="@color/app_text_color2"
+        android:textSize="@dimen/app_text_size2" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lv_fee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="16dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="12dp"
+        android:scrollbars="none"
+        android:visibility="visible" />
+
+    <View style="@style/horizontal_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <TextView
+            android:id="@+id/btn_clear"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_grey_btn_radius"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="重置"
+            android:textColor="@color/app_text_color1"
+            android:textSize="@dimen/app_textsize" />
+
+        <TextView
+            android:id="@+id/btn_done"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_main_btn_radius"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="完成"
+            android:textColor="@color/white"
+            android:textSize="@dimen/app_textsize" />
+    </LinearLayout>
+</LinearLayout>

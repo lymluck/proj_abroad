@@ -1,0 +1,164 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/line_hot_major"
+        style="@style/horizontal_line"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_hot_major"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:paddingBottom="18dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="20dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingTop="4dp"
+            android:text="热门专业"
+            android:textColor="@color/app_main_color"
+            android:textSize="19sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingTop="4dp"
+            android:text="选校"
+            android:textColor="@color/app_text_color2"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/tv_see_more_major_school"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:drawablePadding="4dp"
+            android:drawableRight="@drawable/ic_home_arrow_rg"
+            android:gravity="center_vertical"
+            android:paddingTop="4dp"
+            android:text="查看更多"
+            android:textColor="@color/app_text_color"
+            android:textSize="@dimen/app_text_size4" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcv_hot_major_school"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/line_column"
+        style="@style/horizontal_line"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_home_column_more"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="-2dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="20dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingTop="4dp"
+            android:text="专栏"
+            android:textColor="@color/app_text_color2"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/tv_see_more_column"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:drawablePadding="4dp"
+            android:drawableRight="@drawable/ic_home_arrow_rg"
+            android:gravity="center_vertical"
+            android:paddingTop="4dp"
+            android:text="查看更多"
+            android:textColor="@color/app_text_color"
+            android:textSize="@dimen/app_text_size4" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_home_column"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/line_recent_school"
+        style="@style/horizontal_line"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="4dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_recent_more"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:paddingBottom="18dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="20dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingTop="4dp"
+            android:text="看过的院校"
+            android:textColor="@color/app_text_color2"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/tv_see_more_rencent"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:drawablePadding="4dp"
+            android:drawableRight="@drawable/ic_home_arrow_rg"
+            android:gravity="center_vertical"
+            android:paddingTop="4dp"
+            android:text="查看更多"
+            android:textColor="@color/app_text_color"
+            android:textSize="@dimen/app_text_size4" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcv_recent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:visibility="gone" />
+</LinearLayout>

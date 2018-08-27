@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_top_default" />
+
+    <com.smartstudy.commonlib.ui.customview.slidinglayout.SlidingLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_plan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.smartstudy.commonlib.ui.customview.slidinglayout.SlidingLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_add_plan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F5F6F7"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="#F5F6F7"
+            android:drawableRight="@drawable/ic_add_plan"
+            android:gravity="center"
+            android:text="继续添加考试计划"
+            android:textColor="#26343F"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

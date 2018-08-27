@@ -1,0 +1,221 @@
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/srlt_intro"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingBottom="24dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:context="com.smartstudy.xxd.ui.fragment.CourseIntroFragment">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_course_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:lineSpacingExtra="3dp"
+                android:textColor="@color/app_text_color2"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp">
+
+                <com.smartstudy.commonlib.ui.customview.RatingBar
+                    android:id="@+id/rb_course_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="14dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="4dp"
+                    app:starCount="5"
+                    app:clickable="false"
+                    app:starEmpty="@drawable/ic_star_gray"
+                    app:starFill="@drawable/ic_star_blue"
+                    app:starHalf="@drawable/ic_star_half"
+                    app:starImageSize="14dp"
+                    app:starStep="1.5"
+                    app:stepSize="Half" />
+
+                <TextView
+                    android:id="@+id/tv_course_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/app_text_color"
+                    android:textSize="@dimen/app_text_size3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_course_see"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_see"
+                    android:drawablePadding="4dp"
+                    android:text="0次观看"
+                    android:textColor="@color/app_text_color"
+                    android:textSize="@dimen/app_text_size5" />
+
+                <TextView
+                    android:id="@+id/tv_course_provider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:textColor="@color/app_text_color"
+                    android:textSize="@dimen/app_text_size5" />
+            </LinearLayout>
+
+            <View
+                style="@style/horizontal_line"
+                android:layout_marginBottom="24dp"
+                android:layout_marginTop="24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="课程介绍"
+                android:textColor="@color/app_text_color2"
+                android:textSize="@dimen/app_textsize" />
+
+            <com.smartstudy.commonlib.ui.customview.ExpandableTextView
+                android:id="@+id/etv_intro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:lineSpacingExtra="4dp"
+                android:textColor="@color/app_text_color1"
+                android:textSize="@dimen/app_text_size3"
+                app:etv_EnableToggle="true"
+                app:etv_InitState="shrink"
+                app:etv_MaxLinesOnShrink="4"
+                app:etv_ToShrinkHintColor="@color/app_main_color"
+                app:etv_ToShrinkHintShow="false" />
+
+            <View
+                style="@style/horizontal_line"
+                android:layout_marginBottom="24dp"
+                android:layout_marginTop="24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="适用人群"
+                android:textColor="@color/app_text_color2"
+                android:textSize="@dimen/app_textsize" />
+
+            <com.smartstudy.commonlib.ui.customview.ExpandableTextView
+                android:id="@+id/etv_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:lineSpacingExtra="4dp"
+                android:textColor="@color/app_text_color1"
+                android:textSize="@dimen/app_text_size3"
+                app:etv_EnableToggle="true"
+                app:etv_InitState="shrink"
+                app:etv_MaxLinesOnShrink="4"
+                app:etv_ToShrinkHintColor="@color/app_main_color"
+                app:etv_ToShrinkHintShow="false" />
+
+            <View
+                style="@style/horizontal_line"
+                android:layout_marginBottom="24dp"
+                android:layout_marginTop="24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="课程主讲老师"
+                android:textColor="@color/app_text_color2"
+                android:textSize="@dimen/app_textsize" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp">
+
+                <ImageView
+                    android:id="@+id/iv_teacher_avatar"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/ic_person_default" />
+
+                <LinearLayout
+                    android:id="@+id/llyt_teacher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/iv_teacher_avatar"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_teacher"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/app_text_color2"
+                        android:textSize="@dimen/app_text_size3" />
+
+                    <TextView
+                        android:id="@+id/tv_level"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:textColor="@color/app_text_color3"
+                        android:textSize="@dimen/app_text_size5" />
+                </LinearLayout>
+
+                <com.smartstudy.commonlib.ui.customview.ExpandableTextView
+                    android:id="@+id/etv_teacher_intro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/llyt_teacher"
+                    android:layout_marginTop="16dp"
+                    android:layout_toRightOf="@id/iv_teacher_avatar"
+                    android:lineSpacingExtra="4dp"
+                    android:textColor="@color/app_text_color1"
+                    android:textSize="@dimen/app_text_size3"
+                    app:etv_EnableToggle="true"
+                    app:etv_InitState="shrink"
+                    app:etv_MaxLinesOnShrink="4"
+                    app:etv_ToShrinkHintColor="@color/app_main_color"
+                    app:etv_ToShrinkHintShow="false" />
+            </RelativeLayout>
+
+            <View
+                style="@style/horizontal_line"
+                android:layout_marginBottom="24dp"
+                android:layout_marginTop="24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="智课留学服务"
+                android:textColor="@color/app_text_color2"
+                android:textSize="@dimen/app_textsize" />
+
+            <ImageView
+                android:id="@+id/iv_img"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/ic_img_default" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="viewpager_inner" type="id" />
+    <item name="msg_img" type="id" />
+    <item name="glide_uri" type="id" />
+    <item name="fab_label" type="id" />
+    <item name="statusbarutils_fake_status_bar_view" type="id" />
+    <item name="statusbarutils_translucent_view" type="id" />
+</resources>

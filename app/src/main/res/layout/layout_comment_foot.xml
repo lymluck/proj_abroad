@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_add_good"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_add_good_choose_school"
+        android:drawablePadding="8dp" />
+
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:layout_below="@+id/tv_add_good"
+        android:background="@color/main_bg" />
+
+    <TextView
+        android:id="@+id/tv_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/v_line"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="24dp"
+        android:text="选校评论"
+        android:textColor="@color/app_text_color2"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_no_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_comment"
+        android:layout_centerHorizontal="true"
+        android:text="暂无评论"
+        android:textColor="#949BA1"
+        android:textSize="24sp" />
+
+    <com.smartstudy.commonlib.ui.customview.LoadMoreRecyclerView
+        android:id="@+id/lmrv_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_no_comment"
+        android:paddingLeft="16dp"></com.smartstudy.commonlib.ui.customview.LoadMoreRecyclerView>
+</RelativeLayout>

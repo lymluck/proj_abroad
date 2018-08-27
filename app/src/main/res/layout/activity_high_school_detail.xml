@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    tools:context="com.smartstudy.xxd.ui.activity.HighSchoolDetailActivity">
+
+    <LinearLayout
+        android:id="@+id/llyt_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View style="@style/horizontal_line" />
+
+        <LinearLayout
+            android:id="@+id/llyt_bot_bar"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_share"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:drawablePadding="2dp"
+                android:drawableTop="@drawable/ic_collect"
+                android:gravity="center"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp"
+                android:text="收藏"
+                android:textColor="@color/app_main_color"
+                android:textSize="@dimen/app_text_size6" />
+
+            <LinearLayout
+                android:id="@+id/llyt_ask"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@drawable/bg_advisory_online"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/triangle_icon"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="咨询该学校"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/app_text_size1" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_bg"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_marginTop="-30dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_high_school" />
+
+    <com.smartstudy.commonlib.ui.customview.PullParallaxScrollView
+        android:id="@+id/ppsv_highschool"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/llyt_menu"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        app:headerVisibleHeight="200dp">
+
+        <LinearLayout
+            android:id="@+id/llyt_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/layout_highschool_top" />
+
+            <LinearLayout
+                android:id="@+id/llyt_loading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/main_bg"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <include layout="@layout/layout_footer_loading" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.smartstudy.commonlib.ui.customview.PullParallaxScrollView>
+
+    <View
+        android:id="@+id/view_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_top_height"
+        android:alpha="0.8"
+        android:background="@drawable/shadow" />
+
+    <include
+        android:id="@+id/top_schooldetail"
+        layout="@layout/app_top_default" />
+
+</RelativeLayout>

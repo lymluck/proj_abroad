@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_diaglog"
+    android:orientation="vertical"
+    android:paddingTop="24dp">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="请在下面填写建议或问题反馈"
+        android:textColor="@color/app_text_color2"
+        android:textSize="@dimen/app_text_size1" />
+
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_post_err_edit"
+        android:gravity="top|left"
+        android:hint="您的建议和反馈可以帮助我们更好的完善院校信息。"
+        android:padding="12dp"
+        android:textColor="@color/app_text_color2"
+        android:textColorHint="@color/app_text_color3"
+        android:textCursorDrawable="@null"
+        android:textSize="@dimen/app_text_size2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/negative_btn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/app_basicdialog_btnh"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_app_btn_grey_radius"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@drawable/text_cancel_color"
+            android:textSize="@dimen/app_textsize" />
+
+        <TextView
+            android:id="@+id/positive_btn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/app_basicdialog_btnh"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_app_btn_radius"
+            android:gravity="center"
+            android:text="提交"
+            android:textColor="@color/white"
+            android:textSize="@dimen/app_textsize" />
+    </LinearLayout>
+
+</LinearLayout>

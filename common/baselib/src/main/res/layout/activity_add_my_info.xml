@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_top_default" />
+
+    <View style="@style/horizontal_line" />
+
+    <ImageView
+        android:id="@+id/iv_myPic"
+        android:layout_width="@dimen/add_myinfo_img_wh"
+        android:layout_height="@dimen/add_myinfo_img_wh"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/add_myinfo_img_margin_b"
+        android:layout_marginTop="@dimen/add_myinfo_img_margin_t"
+        android:src="@drawable/ic_add_user_pic" />
+
+    <LinearLayout
+        android:id="@+id/llyt_nickname"
+        style="@style/clickable_simple_item_llyt">
+
+        <TextView
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="昵称"
+            android:textColor="@color/app_text_color"
+            android:textSize="@dimen/app_textsize" />
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/app_text_color4"
+            android:textSize="@dimen/app_textsize" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_go_to" />
+    </LinearLayout>
+
+    <View style="@style/horizontal_line" />
+
+    <LinearLayout
+        android:id="@+id/llyt_grade"
+        style="@style/clickable_simple_item_llyt">
+
+        <TextView
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="所读年级"
+            android:textColor="@color/app_text_color"
+            android:textSize="@dimen/app_textsize" />
+
+        <TextView
+            android:id="@+id/tv_grade"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/app_text_color4"
+            android:textSize="@dimen/app_textsize" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_go_to" />
+    </LinearLayout>
+
+    <View style="@style/horizontal_line" />
+
+    <LinearLayout
+        android:id="@+id/llyt_country"
+        style="@style/clickable_simple_item_llyt">
+
+        <TextView
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="意向国家"
+            android:textColor="@color/app_text_color"
+            android:textSize="@dimen/app_textsize" />
+
+        <TextView
+            android:id="@+id/tv_country"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/app_text_color4"
+            android:textSize="@dimen/app_textsize" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_go_to" />
+    </LinearLayout>
+
+    <View style="@style/horizontal_line" />
+
+    <LinearLayout
+        android:id="@+id/llyt_proj"
+        style="@style/clickable_simple_item_llyt">
+
+        <TextView
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="申请项目"
+            android:textColor="@color/app_text_color"
+            android:textSize="@dimen/app_textsize" />
+
+        <TextView
+            android:id="@+id/tv_proj"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/app_text_color4"
+            android:textSize="@dimen/app_textsize" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_go_to" />
+    </LinearLayout>
+
+    <View style="@style/horizontal_line" />
+
+    <Button
+        android:id="@+id/btn_sure"
+        style="@style/app_onebtn"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/sure" />
+</LinearLayout>

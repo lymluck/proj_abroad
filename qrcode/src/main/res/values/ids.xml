@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="auto_focus" type="id" />
+    <item name="decode" type="id" />
+    <item name="statusbarutils_fake_status_bar_view" type="id" />
+    <item name="statusbarutils_translucent_view" type="id" />
+</resources>

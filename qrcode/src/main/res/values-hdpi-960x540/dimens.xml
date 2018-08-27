@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="app_top_right_btn_marginleft">16dp</dimen>  <!-- 头部布局文件中右边图片的内左边距 -->
+    <dimen name="app_top_right_btn_marginright">16dp</dimen>  <!-- 头部布局文件中右边图片的内右边距 -->
+    <dimen name="app_top_height">44dp</dimen>  <!-- app默认头部导航条高度 -->
+
+    <dimen name="app_text_size1">17sp</dimen>  <!-- app头部标题文本大小 -->
+</resources>

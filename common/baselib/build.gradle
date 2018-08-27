@@ -1,0 +1,49 @@
+apply plugin: rootProject.ext.plugins.library
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+    defaultConfig {
+        multiDexEnabled true
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = ["moduleName": project.name]
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            zipAlignEnabled true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation rootProject.ext.dependencies.support
+    implementation rootProject.ext.dependencies.design
+    implementation rootProject.ext.dependencies.glide
+    implementation rootProject.ext.dependencies.nineoldandroids
+    implementation rootProject.ext.dependencies.fastjson
+    implementation rootProject.ext.dependencies.recyclerview
+    implementation rootProject.ext.dependencies.cardview
+    implementation rootProject.ext.dependencies.palette
+    implementation rootProject.ext.dependencies.okhttp
+    implementation rootProject.ext.dependencies.eventbus
+    implementation rootProject.ext.dependencies.walle
+    //添加 Sensors Analytics SDK 依赖
+    implementation rootProject.ext.dependencies.sensors
+    implementation project(':common:thirdsdk')
+    implementation project(':permissionlib')
+    implementation project(':xxdRouter')
+    annotationProcessor project(':xxdCompiler')
+    implementation project(':qrcode')
+}

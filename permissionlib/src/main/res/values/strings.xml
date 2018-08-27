@@ -1,0 +1,5 @@
+<resources>
+    <string name="title_settings_dialog">权限申请</string>
+    <string name="to_setting">好的</string>
+    <string name="to_cancle">取消</string>
+</resources>

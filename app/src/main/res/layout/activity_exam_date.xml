@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical"
+    tools:context=".ui.activity.ExamDateActivity">
+
+    <include
+        android:id="@+id/top_test_date"
+        layout="@layout/app_top_default" />
+
+    <RelativeLayout
+        android:id="@+id/rl_update"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/top_test_date"
+        android:background="@color/myschool_tip_color"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_update"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:drawableLeft="@drawable/ic_date_update"
+            android:drawablePadding="6dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/exam_date_update_color"
+            android:textSize="@dimen/app_text_size4" />
+
+        <ImageView
+            android:id="@+id/iv_close_update"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:src="@drawable/ic_date_close" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_week"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_update"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="日"
+            android:textColor="@color/app_text_color2"
+            android:textSize="@dimen/app_text_size7" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="一"
+            android:textColor="@color/app_text_color2"
+            android:textSize="@dimen/app_text_size7" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="二"
+            android:textColor="@color/app_text_color2"
+            android:textSize="@dimen/app_text_size7" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="三"
+            android:textColor="@color/app_text_color2"
+            android:textSize="@dimen/app_text_size7" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="四"
+            android:textColor="@color/app_text_color2"
+            android:textSize="@dimen/app_text_size7" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="五"
+            android:textColor="@color/app_text_color2"
+            android:textSize="@dimen/app_text_size7" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="六"
+            android:textColor="@color/app_text_color2"
+            android:textSize="@dimen/app_text_size7" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_my_plan"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:drawableRight="@drawable/ic_arrow_up_gray"
+        android:paddingBottom="14dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="14dp"
+        android:textColor="@color/app_text_color2"
+        android:textSize="@dimen/app_text_size1"
+        android:visibility="gone" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tv_my_plan"
+        android:layout_below="@id/ll_week"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/ll_calendar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:visibility="gone" />
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <ImageView
+        android:id="@+id/iv_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <com.smartstudy.commonlib.ui.customview.FloatingActionMenu
+        android:id="@+id/menu_choose"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:paddingBottom="60dp"
+        android:paddingRight="16dp"
+        android:visibility="gone"
+        fab:menu_backgroundColor="@color/white70"
+        fab:menu_colorNormal="@color/app_main_color"
+        fab:menu_colorPressed="@color/app_main_color80"
+        fab:menu_fab_showText="true"
+        fab:menu_fab_text="筛选全部"
+        fab:menu_fab_textcolor="@color/white"
+        fab:menu_fab_textsize="@dimen/app_text_size5">
+
+        <com.smartstudy.commonlib.ui.customview.FloatingActionButton
+            android:id="@+id/fab_gre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/bg_gre_menu"
+            fab:fab_colorPressed="@color/bg_gre_menu80"
+            fab:fab_showText="true"
+            fab:fab_size="mini"
+            fab:fab_text="GRE"
+            fab:fab_textcolor="@color/white"
+            fab:fab_textsize="@dimen/app_text_size5" />
+
+        <com.smartstudy.commonlib.ui.customview.FloatingActionButton
+            android:id="@+id/fab_gmat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/bg_gmat_menu"
+            fab:fab_colorPressed="@color/bg_gmat_menu80"
+            fab:fab_showText="true"
+            fab:fab_size="mini"
+            fab:fab_text="GMAT"
+            fab:fab_textcolor="@color/white"
+            fab:fab_textsize="@dimen/app_text_size5" />
+
+        <com.smartstudy.commonlib.ui.customview.FloatingActionButton
+            android:id="@+id/fab_sat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/bg_sat_menu"
+            fab:fab_colorPressed="@color/bg_sat_menu80"
+            fab:fab_showText="true"
+            fab:fab_size="mini"
+            fab:fab_text="SAT"
+            fab:fab_textcolor="@color/white"
+            fab:fab_textsize="@dimen/app_text_size5" />
+
+        <com.smartstudy.commonlib.ui.customview.FloatingActionButton
+            android:id="@+id/fab_islet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/bg_islet_menu"
+            fab:fab_colorPressed="@color/bg_islet_menu80"
+            fab:fab_showText="true"
+            fab:fab_size="mini"
+            fab:fab_text="雅思"
+            fab:fab_textcolor="@color/white"
+            fab:fab_textsize="@dimen/app_text_size5" />
+
+        <com.smartstudy.commonlib.ui.customview.FloatingActionButton
+            android:id="@+id/fab_tolft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/bg_tolft_menu"
+            fab:fab_colorPressed="@color/bg_tolft_menu80"
+            fab:fab_showText="true"
+            fab:fab_size="mini"
+            fab:fab_text="托福"
+            fab:fab_textcolor="@color/white"
+            fab:fab_textsize="@dimen/app_text_size5" />
+
+        <com.smartstudy.commonlib.ui.customview.FloatingActionButton
+            android:id="@+id/fab_my"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            fab:fab_colorNormal="@color/white"
+            fab:fab_colorPressed="@color/white87"
+            fab:fab_showText="true"
+            fab:fab_size="mini"
+            fab:fab_text="我的计划"
+            fab:fab_textcolor="@color/app_main_color"
+            fab:fab_textsize="@dimen/app_text_size5" />
+
+    </com.smartstudy.commonlib.ui.customview.FloatingActionMenu>
+
+    <ImageView
+        android:id="@+id/iv_exam_restore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="85dp"
+        android:layout_marginRight="6dp"
+        android:padding="15dp"
+        android:src="@drawable/ic_restore_exam_opt"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/view_empty"
+        layout="@layout/layout_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_test_date" />
+</RelativeLayout>

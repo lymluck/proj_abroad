@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="rate_test_rlt1">#639CEF</color> <!-- 录取率测试结果胜券在握颜色 -->
+    <color name="rate_test_rlt2">#03BD52</color> <!-- 录取率测试结果比较容易颜色 -->
+    <color name="rate_test_rlt3">#3DBA9F</color> <!-- 录取率测试结果可以尝试颜色 -->
+    <color name="rate_test_rlt4">#FF8A00</color> <!-- 录取率测试结果有些难度颜色 -->
+    <color name="rate_test_rlt5">#F6611D</color> <!-- 录取率测试结果比较困难颜色 -->
+    <color name="user_rate_clor">#FFB400</color> <!-- 录取率测试结果用户录取率颜色 -->
+    <color name="gpa_text_clor">#949BA1</color>
+    <color name="gpa_backgroup_clor">#F5F6F7</color>
+    <color name="qa_post_clor">#949BA1</color>
+    <color name="study_plan_clor">#078CF1</color>
+
+</resources>
