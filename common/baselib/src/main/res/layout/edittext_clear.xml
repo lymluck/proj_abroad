@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:gravity="center_vertical">
+
+    <EditText
+        android:id="@+id/edt_input"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/transparent"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/item_rightbtnheight"
+        android:paddingLeft="@dimen/edittext_withclear_paddinglr"
+        android:paddingRight="@dimen/edittext_withclear_paddinglr"
+        android:singleLine="true"
+        android:textColor="@color/app_text_color"
+        android:textColorHint="@color/app_text_color3"
+        android:textCursorDrawable="@null"
+        android:textSize="@dimen/app_text_size2" />
+    <!--删除按钮-->
+    <ImageButton
+        android:id="@+id/btn_delete"
+        android:layout_width="@dimen/edittext_withclear_clearimgwh"
+        android:layout_height="@dimen/edittext_withclear_clearimgwh"
+        android:layout_marginRight="@dimen/edittext_withclear_clearimg_marginr"
+        android:background="@drawable/imgbuttonclear"
+        android:scaleType="centerInside"
+        android:visibility="gone" />
+</LinearLayout>

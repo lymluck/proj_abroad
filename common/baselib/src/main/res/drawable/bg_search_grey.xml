@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 全局通栏搜索背景样式 -->
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/bg_home_search" />
+    <corners android:radius="8dp" />
+</shape>

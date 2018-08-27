@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/rc_normal_bg"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/rc_ac_ll_base_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/rc_action_bar_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:drawableLeft="@drawable/rc_back_icon"
+            android:paddingLeft="16dp"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/rc_action_bar_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="48dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="#ff333333"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/rc_action_bar_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:background="@android:color/transparent"
+            android:paddingRight="10dp"
+            android:text="@string/rc_action_bar_ok"
+            android:textColor="#078CF1"
+            android:textSize="17sp"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <ViewFlipper
+        android:id="@+id/rc_base_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent" />
+</LinearLayout>

@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- 主页tab按钮样式 -->
+    <style name="main_tab_style">
+
+        <!-- 后期适配通过dimen来处理 -->
+        <item name="android:textSize">@dimen/app_main_tab_textsize</item>
+        <item name="android:textColor">@color/app_tab_text_color</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingTop">5.0dp</item>
+        <item name="android:paddingBottom">2.0dp</item>
+        <item name="android:drawablePadding">3.0dp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="elevation">0dp</item>
+    </style>
+
+</resources>

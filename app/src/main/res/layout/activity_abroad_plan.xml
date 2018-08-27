@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.smartstudy.xxd.ui.activity.AbroadPlanActivity">
+
+    <include layout="@layout/app_top_default" />
+
+    <LinearLayout
+        android:id="@+id/llyt_has_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <com.smartstudy.commonlib.ui.customview.SlidingTabStrip
+                android:id="@+id/tabs_xl"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/app_top_tab_h"
+                android:textColor="@color/app_text_color"
+                android:textSize="15sp"
+                android:visibility="gone"
+                app:pstsDividerColor="@color/transparent"
+                app:pstsIndicatorColor="@color/app_main_color"
+                app:pstsIndicatorHeight="2dp"
+                app:pstsScaleZoomMax="0.1"
+                app:pstsShouldExpand="true"
+                app:pstsSmoothScrollWhenClickTab="false"
+                app:pstsTextSelectedColor="@color/app_main_color"
+                app:pstsUnderlineColor="@color/white" />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rclv_plan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llyt_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="110dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="还未领取你的留学规划"
+            android:textColor="#949BA1"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_get_planning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_qa_posted_blue"
+            android:paddingBottom="10dp"
+            android:paddingLeft="55dp"
+            android:paddingRight="55dp"
+            android:paddingTop="10dp"
+            android:text="立即领取"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

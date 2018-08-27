@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="top"
+    android:orientation="vertical"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_gravity="top"
+        android:background="@drawable/simple_item_shadow_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_special_qa"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:padding="16dp"
+            android:textColor="@color/app_text_color2"
+            android:textSize="18sp" />
+
+        <View style="@style/horizontal_line" />
+
+        <RadioGroup
+            android:id="@+id/rg_btn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/btn_qa_yes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/rb_white_btn"
+                android:button="@null"
+                android:gravity="center"
+                android:text="是"
+                android:textColor="@color/text_selected_white"
+                android:textSize="20sp" />
+
+            <View style="@style/vertical_line" />
+
+            <RadioButton
+                android:id="@+id/btn_qa_no"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/rb_white_btn"
+                android:button="@null"
+                android:gravity="center"
+                android:text="否"
+                android:textColor="@color/text_selected_white"
+                android:textSize="20sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>

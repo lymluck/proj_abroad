@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MQMatchMatch"
+    android:background="@color/mq_photo_activity_bg"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+
+    <com.meiqia.meiqiasdk.widget.MQHackyViewPager
+        android:id="@+id/content_hvp"
+        style="@style/MQMatchMatch" />
+
+    <RelativeLayout
+        android:id="@+id/title_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mq_title_height"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/back_iv"
+            style="@style/MQWrapMatch"
+            android:paddingLeft="@dimen/mq_size_level3"
+            android:paddingRight="@dimen/mq_size_level3"
+            android:src="@drawable/ic_go_back" />
+
+        <TextView
+            android:id="@+id/title_tv"
+            style="@style/MQWrapMatch"
+            android:layout_toRightOf="@id/back_iv"
+            android:gravity="center_vertical"
+            android:textColor="@color/app_text_color2"
+            android:textSize="@dimen/app_text_size1"
+            tools:text="1/12" />
+
+        <TextView
+            android:id="@+id/submit_tv"
+            style="@style/MQWrapMatch"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/mq_size_level2"
+            android:background="@drawable/bg_main_btn_radius"
+            android:clickable="true"
+            android:gravity="center"
+            android:minWidth="60dp"
+            android:paddingLeft="@dimen/mq_size_level1"
+            android:paddingRight="@dimen/mq_size_level1"
+            android:singleLine="true"
+            android:text="@string/mq_confirm"
+            android:textColor="@color/white"
+            android:textSize="@dimen/mq_title_left_right_textSize" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/choose_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mq_title_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/mq_photo_title_bg">
+
+        <TextView
+            android:id="@+id/choose_tv"
+            style="@style/MQWrapMatch"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/mq_size_level2"
+            android:clickable="true"
+            android:drawableLeft="@drawable/mq_ic_cb_normal"
+            android:drawablePadding="@dimen/mq_size_level1"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/mq_size_level2"
+            android:paddingRight="@dimen/mq_size_level2"
+            android:text="@string/mq_choose"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/mq_title_left_right_textSize" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

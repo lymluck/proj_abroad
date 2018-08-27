@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 填充颜色 -->
+    <solid android:color="#E4E5E6" />
+    <!-- 线的宽度，颜色灰色 -->
+    <corners android:radius="14.5dp" />
+</shape>

@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_top_default" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srlt_visa_news"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.smartstudy.commonlib.ui.customview.LoadMoreRecyclerView
+            android:id="@+id/rclv_visa_news"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_diaglog"
+    android:orientation="vertical">
+
+    <com.smartstudy.commonlib.ui.customview.RatingBar
+        android:id="@+id/rb_course_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        app:starCount="5"
+        app:starEmpty="@drawable/ic_star_gray"
+        app:starFill="@drawable/ic_star_blue"
+        app:starHalf="@drawable/ic_star_half"
+        app:starImageSize="29dp"
+        app:starPadding="10dp"
+        app:starStep="0"
+        app:stepSize="Full" />
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/app_main_color"
+        android:textSize="@dimen/app_text_size3" />
+
+    <EditText
+        android:id="@+id/et_msg"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/commom_search_top_bg"
+        android:gravity="left|top"
+        android:hint="请尽可能详细地描述您的问题"
+        android:padding="12dp"
+        android:textColor="@color/app_text_color2"
+        android:textColorHint="@color/app_text_color3"
+        android:textSize="@dimen/app_text_size3" />
+
+    <Button
+        android:id="@+id/btn_commit"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginRight="65dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_raduis_btn_main"
+        android:enabled="false"
+        android:text="提交评价"
+        android:textColor="@color/white"
+        android:textSize="@dimen/app_text_size3" />
+</LinearLayout>

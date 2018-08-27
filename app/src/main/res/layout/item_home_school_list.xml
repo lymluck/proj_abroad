@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.smartstudy.commonlib.ui.customview.SquareLinearLayout
+        android:id="@+id/sllyt_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_border_gray"
+        android:gravity="center"
+        android:padding="14dp">
+
+        <ImageView
+            android:id="@+id/iv_school_logo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_img_default" />
+    </com.smartstudy.commonlib.ui.customview.SquareLinearLayout>
+
+    <TextView
+        android:id="@+id/tv_school_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/app_text_color1"
+        android:textSize="@dimen/app_text_size3" />
+</LinearLayout>

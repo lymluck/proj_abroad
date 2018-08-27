@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 全局通栏按钮背景样式 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 填充颜色 -->
+    <solid android:color="@color/commom_search_top_bg" />
+    <corners android:radius="5dp" />
+</shape>

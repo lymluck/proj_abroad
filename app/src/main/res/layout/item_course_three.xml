@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/commom_search_top_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="17dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="17dp">
+
+        <FrameLayout
+            android:layout_width="15dp"
+            android:layout_height="15dp">
+
+            <com.smartstudy.commonlib.ui.customview.ProgressPieView
+                android:id="@+id/ppv_course"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                app:ppvProgressColor="@color/app_main_color"
+                app:ppvStrokeWidth="1dp" />
+
+            <ImageView
+                android:id="@+id/iv_status"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_video_0" />
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/tv_type_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:textColor="@color/app_text_color1"
+            android:textSize="@dimen/app_text_size3" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:textColor="@color/app_text_color1"
+            android:textSize="@dimen/app_text_size3" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line_course"
+        style="@style/horizontal_line"
+        android:layout_marginLeft="16dp"
+        android:visibility="gone" />
+</LinearLayout>

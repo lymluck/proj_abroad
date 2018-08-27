@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="image_color">28dp</dimen>
+
+    <dimen name="image_color_margin">6dp</dimen>
+
+    <dimen name="image_mode_space">32dp</dimen>
+
+    <dimen name="image_popup_dialog_distance_to_edge">40dp</dimen>
+</resources>

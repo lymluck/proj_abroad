@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llyt_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.smartstudy.commonlib.ui.activity.LoginActivity">
+
+    <include layout="@layout/app_top_default" />
+
+    <FrameLayout
+        android:id="@+id/flt_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/login_logo_margin_t">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/btn_master"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bg_app_btn"
+                android:text="线上"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/btn_test"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bg_app_btn"
+                android:text="测试"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/btn_dev"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bg_app_btn"
+                android:text="本地"
+                android:textSize="10sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="@dimen/login_logo_wh"
+            android:layout_height="@dimen/login_logo_wh"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_logo_raduis" />
+    </FrameLayout>
+
+    <com.smartstudy.commonlib.ui.customview.EditTextWithClear
+        android:id="@+id/etc_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="@dimen/login_edittext_margin_t" />
+
+    <View
+        style="@style/horizontal_line"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etc_yzm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:minHeight="@dimen/item_rightbtnheight"
+            android:paddingLeft="@dimen/edittext_withclear_paddinglr"
+            android:paddingRight="@dimen/edittext_withclear_paddinglr"
+            android:singleLine="true"
+            android:textColor="@color/app_text_color"
+            android:textColorHint="@color/app_text_color3"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/app_text_size2" />
+
+        <TextView
+            android:id="@+id/tv_yzm"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:gravity="center_vertical"
+            android:text="@string/get_security_code"
+            android:textColor="@color/app_main_color"
+            android:textSize="@dimen/app_text_size2" />
+    </LinearLayout>
+
+    <View
+        style="@style/horizontal_line"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" />
+
+    <Button
+        android:id="@+id/btn_login"
+        style="@style/app_onebtn"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="@dimen/login_btn_margin_t"
+        android:text="登录" />
+
+    <TextView
+        android:id="@+id/tv_xxd_contract"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/login_contract_margin_t"
+        android:text="登录即表示同意选校帝用户协议"
+        android:textColor="@color/app_text_color"
+        android:textSize="12sp" />
+</LinearLayout>

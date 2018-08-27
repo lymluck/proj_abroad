@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_diaglog"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="20dp"
+        android:text="@string/send_to"
+        android:textColor="@color/app_text_color2"
+        android:textSize="@dimen/app_text_size1"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="12dp">
+
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/app_text_color2"
+            android:textSize="@dimen/app_text_size1" />
+    </LinearLayout>
+
+    <View
+        style="@style/horizontal_line"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="14dp" />
+
+    <LinearLayout
+        android:id="@+id/cont_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:padding="5dp"
+            android:text="content"
+            android:textColor="@color/app_text_color"
+            android:textSize="@dimen/app_text_size3" />
+
+        <EditText
+            android:id="@+id/dialog_edit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_basicdialog_inputh"
+            android:layout_marginBottom="@dimen/app_basicdialog_editmarginb"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/editdialog_bg"
+            android:hint="@string/word"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/app_text_color"
+            android:textColorHint="@color/app_text_color3"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/app_text_size3" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/negative_btn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/app_basicdialog_btnh"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn_lb_radius"
+            android:gravity="center"
+            android:text="@string/cancle"
+            android:textColor="@color/text_cancel_color"
+            android:textSize="@dimen/app_text_size1" />
+
+        <Button
+            android:id="@+id/positive_btn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/app_basicdialog_btnh"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn_rb_radius"
+            android:gravity="center"
+            android:text="@string/send"
+            android:textColor="@color/text_selected_color"
+            android:textSize="@dimen/app_text_size1" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

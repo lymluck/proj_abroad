@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 00%=FF,5%=F2,10%=E5,15%=D8,20%=CC,25%=BF,30%=B2,35%=A5,40%=99,45%=8c,50%=7F -->
+    <!-- ic_launcher%=72,60%=66,65%=59,70%=4c,75%=3F,80%=33,85%=21,90%=19,95%=0c,100%=00 -->
+    <color name="app_top_color">#ffffff</color> <!-- 主页头部背景色 -->
+    <color name="topcentertext">#ff333333</color> <!--app头部中间标题字体颜色 -->
+    <color name="app_main_color">#078CF1</color>     <!-- 主色调颜色 -->
+    <color name="app_main_color80">#b2078CF1</color>     <!-- 80%主色调颜色 -->
+    <color name="app_main_color10">#19078CF1</color>     <!-- 80%主色调颜色 -->
+    <color name="main_bg">#f5f5f5</color> <!-- 主页背景色 -->
+    <color name="send_dialog_bg">#fbfbfb</color> <!-- 主页背景色 -->
+    <color name="app_tab_text_color">#999999</color>     <!-- 主页面未选中tab文字颜色 -->
+    <color name="app_tab_bg">#ffffffff</color> <!-- 主页导航栏背景色 -->
+    <color name="app_text_color">#949ba1</color> <!-- 正文文本颜色 -->
+    <color name="app_text_color1">#58646E</color> <!-- 正文1文本颜色 -->
+    <color name="app_text_color2">#26343F</color> <!-- 正文2文本颜色 -->
+    <color name="app_text_color3">#c4c9cc</color> <!-- 正文3文本颜色 -->
+    <color name="app_text_color4">#505050</color> <!-- 正文4文本颜色 -->
+    <color name="app_text_color5">#F6611D</color> <!-- 正文7文本颜色 -->
+    <color name="app_text_title_color">#4c4c4c</color> <!-- 文字标题颜色 -->
+    <color name="app_basicdialog_editborder">#cccccc</color><!--标准对话框边框色 -->
+    <color name="item_click_tran80">#f0f0f0</color><!-- item点击后颜色改变透明度80% -->
+    <color name="horizontal_line_color">#ffe5e5e5</color> <!-- 分割线颜色 -->
+    <color name="item_click_tran10">#19ffffff</color><!-- item点击后颜色改变透明度10% -->
+    <color name="item_click_tran20">#38122227</color><!-- item点击后颜色改变透明度20% -->
+    <color name="item_click_tran25">#3fffffff</color><!-- item点击后颜色改变透明度25% -->
+    <color name="transparent">#00ffffff</color> <!-- 透明色 -->
+    <color name="search_bg">#fff7f7f7</color> <!-- 搜索框背景色 -->
+    <color name="cicle_border_bg">#eeeeee</color> <!-- 圆形边框背景色 -->
+    <color name="bg_answer_color">#FF764B</color> <!-- 答icon背景颜色 -->
+    <color name="bg_yjs_color">#FF9C08</color> <!-- 研究生颜色改版 -->
+    <color name="myschool_tip_color">#FBF9DE</color> <!-- 我的选校提示文字背景色 -->
+    <color name="mytest_txt_color">#FFBB00</color> <!-- 智能选专业文字背景色 -->
+    <color name="mytest_txt_color80">#b2FFBB00</color> <!-- 智能选专业文字背景色按下 -->
+    <color name="green_btn_color80">#b203bd52</color> <!-- 绿色按钮按压时颜色 -->
+    <color name="green_btn_color">#03bd52</color> <!-- 按钮绿色背景 -->
+    <color name="bg_progress">#F0F0F0</color> <!-- 横向进度跳背景颜色 -->
+    <color name="bg_home_search">#E4E5E6</color> <!-- 首页搜索框背景颜色 -->
+    <color name="commom_search_top_bg">#F5F7F8</color> <!-- 公共搜索框背景颜色 -->
+    <color name="home_search_title_bg">#F5F6F7</color> <!-- 首页搜索列表标题背景颜色 -->
+    <color name="home_top_bg_start">#078CF1</color> <!-- 首页渐变色起始颜色 -->
+    <color name="home_top_bg_end">#46AFFF</color> <!-- 首页渐变色结束颜色 -->
+    <color name="bg_guide_color">#E9FAFF</color> <!-- 引导页背景颜色 -->
+    <color name="school_news">#00cacc</color> <!-- 院校详情页资讯颜色 -->
+    <color name="school_sia">#8F78EF</color> <!-- 院校详情页艺术生申请颜色 -->
+
+    <color name="white">#ffffffff</color><!--100%的白色 -->
+    <color name="white95">#f2ffffff</color><!--95%的白色 -->
+    <color name="white87">#ffffff</color><!--87%的白色 -->
+    <color name="white70">#b2ffffff</color><!--70%的白色 -->
+    <color name="white60">#99ffffff</color><!--60%的白色 -->
+    <color name="white50">#7fffffff</color><!--50%的白色 -->
+    <color name="white30">#4cffffff</color><!--30%的白色 -->
+    <color name="white20">#38ffffff</color><!--20%的白色 -->
+    <color name="white15">#26ffffff</color><!--15%的白色 -->
+    <color name="white10">#19ffffff</color><!--10%的白色 -->
+    <color name="black">#ff000000</color><!-- 黑色文本 -->
+    <color name="black80">#cc000000</color><!-- 80%的黑色 -->
+    <color name="black70">#b2000000</color><!-- 70%的黑色 -->
+    <color name="black50">#7f000000</color><!--50%的黑色 -->
+    <color name="black48">#7a000000</color>ic_launcher--48%的黑色 -->
+    <color name="black40">#66000000</color><!--40%的黑色 -->
+    <color name="black30">#4c000000</color><!--30%的黑色 -->
+    <color name="black20">#38000000</color><!--20%的黑色 -->
+    <color name="black15">#26000000</color><!--10%的黑色 -->
+    <color name="black10">#10000000</color><!--10%的黑色 -->
+    <color name="black5">#0c000000</color><!--10%的黑色 -->
+    <color name="orange_clor">#FFB400</color>
+</resources>

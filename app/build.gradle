@@ -1,0 +1,68 @@
+apply plugin: rootProject.ext.plugins.application
+apply from: rootProject.ext.plugins.tinkerpatch
+apply plugin: rootProject.ext.plugins.growingIO
+apply plugin: rootProject.ext.plugins.router
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+    defaultConfig {
+        multiDexEnabled true
+        applicationId rootProject.ext.android.applicationId
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi', 'armeabi-v7a', 'x86'
+        }
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    signingConfigs {
+        release {
+            keyAlias KEY_ALIAS
+            keyPassword KEY_PASSWORD
+            storeFile file(STORE_FILE)
+            storePassword KEYSTORE_PASSWORD
+        }
+    }
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.release
+        }
+        release {
+            zipAlignEnabled true
+            shrinkResources true  // 移除无用的resource文件
+            minifyEnabled true
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile rootProject.ext.dependencies.support
+    compile rootProject.ext.dependencies.eventbus
+    compile rootProject.ext.dependencies.fastjson
+    compile rootProject.ext.dependencies.nineoldandroids
+    compile project(':common:baselib')
+    compile project(':meiqiasdk')
+    compile project(':medialib')
+    compile project(':xxdAnnotation')
+    compile(name: 'HMS-SDK-2.4.0.300', ext: 'aar')
+    compile files('libs/MiPush_SDK_Client_3_6_1.jar')
+}
+
+repositories { flatDir { dirs 'aars' } }

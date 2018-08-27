@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/searchView"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/app_top_height"
+    android:background="@color/search_bg"
+    android:padding="8dp"
+    android:transitionName="search_top">
+
+    <com.smartstudy.commonlib.ui.customview.DrawableTextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/search_white_bg"
+        android:drawableLeft="@drawable/search_gray"
+        android:drawablePadding="2dp"
+        android:gravity="center_vertical"
+        android:text="@string/search"
+        android:textColor="@color/app_text_color3"
+        android:textSize="@dimen/app_text_size2" />
+
+</RelativeLayout>

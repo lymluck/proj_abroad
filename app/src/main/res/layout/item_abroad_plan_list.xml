@@ -1,0 +1,119 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view_first"
+        style="@style/vertical_line"
+        android:layout_width="2dp"
+        android:layout_height="6dp"
+        android:layout_marginLeft="30dp"
+        android:background="@color/bg_home_search"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rlyt_line"
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp">
+
+            <View
+                style="@style/vertical_line"
+                android:layout_width="2dp"
+                android:layout_marginLeft="20dp"
+                android:background="@color/bg_home_search" />
+
+            <TextView
+                android:id="@+id/view_left_circle"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/icon_grade"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/app_text_size5" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ic_bubble_gradle"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="关键词"
+                android:textColor="@color/app_text_color2"
+                android:textSize="@dimen/app_text_size1" />
+
+            <com.smartstudy.commonlib.ui.customview.TagsLayout
+                android:id="@+id/tly_tags"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:visibility="visible"
+                app:tagHorizontalSpace="8dp"
+                app:tagVerticalSpace="8dp"
+                app:padding_bottom_top="4dp"
+                app:textChildSize="@dimen/app_text_size4"
+                app:padding_left_right="8dp"
+                app:textColor="@color/app_main_color" />
+
+            <LinearLayout
+                android:id="@+id/llyt_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_xq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/app_text_color"
+
+                    android:textSize="@dimen/app_text_size4" />
+
+                <com.smartstudy.commonlib.ui.customview.ExpandableTextView
+                    android:id="@+id/tv_plan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:lineSpacingExtra="4dp"
+                    android:textColor="@color/app_text_color2"
+                    android:textSize="@dimen/app_text_size3"
+                    app:etv_EnableToggle="true"
+                    app:etv_InitState="shrink"
+                    app:etv_MaxLinesOnShrink="4"
+                    app:etv_ToShrinkHintColor="@color/app_main_color"
+                    app:etv_ToShrinkHintShow="false" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_last"
+        style="@style/vertical_line"
+        android:layout_width="2dp"
+        android:layout_height="22dp"
+        android:layout_marginLeft="30dp"
+        android:background="@color/bg_home_search"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+apply plugin: 'java-library'
+
+dependencies {
+    compile rootProject.ext.dependencies.javapoet
+    compile project(':xxdAnnotation')
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"

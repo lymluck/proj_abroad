@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.smartstudy.xxd.ui.activity.SrtSpecialResultIntroActivity">
+
+    <include layout="@layout/app_top_default" />
+
+    <com.smartstudy.commonlib.ui.customview.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="24dp"
+                android:text="霍兰德职业适应性测验"
+                android:textColor="@color/app_text_color2"
+                android:textSize="22sp" />
+
+            <com.smartstudy.commonlib.ui.customview.RadarView
+                android:id="@+id/rc_test"
+                android:layout_width="match_parent"
+                android:layout_height="330dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                app:max_value="2"
+                app:radar_bg_color="@color/main_bg"
+                app:radar_layer="6"
+                app:radar_line_color="@color/horizontal_line_color"
+                app:radar_line_width="1dp"
+                app:rotation_enable="false"
+                app:vertex_text_color="@color/app_text_color2"
+                app:vertex_text_size="@dimen/app_text_size5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="24dp"
+                android:lineSpacingExtra="5dp"
+                android:paddingBottom="48dp"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:text="@string/test_intro"
+                android:textColor="@color/app_text_color2"
+                android:textSize="@dimen/app_text_size2" />
+        </LinearLayout>
+
+    </com.smartstudy.commonlib.ui.customview.ReboundScrollView>
+</LinearLayout>

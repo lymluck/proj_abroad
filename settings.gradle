@@ -1,0 +1,4 @@
+include ':xxdAnnotation', ':xxdCompiler', ':buildSrc', ':imkit', ':imlib', ':image', ':qrcode'
+include ':xxdAnnotation', ':xxdCompiler', ':buildSrc', ':qrcode'
+include ':xxdAnnotation', ':xxdCompiler', ':buildSrc', ':imkit', ':imlib', ':image', ':qrcode'
+include 'app', ':medialib', ':meiqiasdk', ':common:baselib', ':common:permissionlib', ':xxdRouter'

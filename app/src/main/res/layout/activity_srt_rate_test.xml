@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.smartstudy.xxd.ui.activity.SrtRateTestActivity">
+
+    <include
+        android:id="@+id/top_rate_test"
+        layout="@layout/app_top_default" />
+
+    <com.smartstudy.commonlib.ui.customview.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_school_logo"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:elevation="8dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" />
+
+                <TextView
+                    android:id="@+id/tv_chineseName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/app_text_color2"
+                    android:textSize="@dimen/app_text_size1" />
+
+                <TextView
+                    android:id="@+id/tv_englishName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/app_text_color"
+                    android:textSize="@dimen/app_text_size4" />
+
+                <TextView
+                    android:id="@+id/tv_btn_reset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="18dp"
+                    android:background="@drawable/bg_app_trans_btn_grey_radius70_solid"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/ic_rate_reset"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingTop="4dp"
+                    android:text="切换测试学校"
+                    android:textColor="@color/app_text_color"
+                    android:textSize="@dimen/app_text_size5"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/llyt_apply_project"
+                    style="@style/clickable_simple_item_llyt">
+
+                    <TextView
+                        android:layout_width="115dp"
+                        android:layout_height="wrap_content"
+                        android:text="申请项目"
+                        android:textColor="@color/app_text_color"
+                        android:textSize="@dimen/app_textsize" />
+
+                    <TextView
+                        android:id="@+id/tv_apply_project"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/app_text_color4"
+                        android:textSize="@dimen/app_textsize" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_go_to" />
+                </LinearLayout>
+
+                <View
+                    style="@style/horizontal_line"
+                    android:layout_marginLeft="16dp" />
+
+                <LinearLayout
+                    android:id="@+id/llyt_grade"
+                    style="@style/clickable_simple_item_llyt">
+
+                    <TextView
+                        android:layout_width="115dp"
+                        android:layout_height="wrap_content"
+                        android:text="当前年级"
+                        android:textColor="@color/app_text_color"
+                        android:textSize="@dimen/app_textsize" />
+
+                    <TextView
+                        android:id="@+id/tv_grade"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:textColor="@color/app_text_color4"
+                        android:textSize="@dimen/app_textsize" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_go_to" />
+                </LinearLayout>
+
+                <View
+                    style="@style/horizontal_line"
+                    android:layout_marginLeft="16dp" />
+
+                <LinearLayout style="@style/clickable_simple_item_llyt">
+
+                    <TextView
+                        android:layout_width="115dp"
+                        android:layout_height="wrap_content"
+                        android:text="在校成绩"
+                        android:textColor="@color/app_text_color"
+                        android:textSize="@dimen/app_textsize" />
+
+                    <EditText
+                        android:id="@+id/et_school_score"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:hint="百分制"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:textColor="@color/app_text_color4"
+                        android:textColorHint="@color/app_text_color3"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/app_textsize" />
+                </LinearLayout>
+
+                <View
+                    style="@style/horizontal_line"
+                    android:layout_marginLeft="16dp" />
+
+                <LinearLayout style="@style/clickable_simple_item_llyt">
+
+                    <Spinner
+                        android:id="@+id/spinner_eg"
+                        android:layout_width="115dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_spinner"
+                        android:gravity="left|center_vertical" />
+
+                    <EditText
+                        android:id="@+id/et_eg"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:hint="@string/choose_eg"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/app_text_color4"
+                        android:textColorHint="@color/app_text_color3"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/app_textsize" />
+                </LinearLayout>
+
+                <View
+                    style="@style/horizontal_line"
+                    android:layout_marginLeft="16dp" />
+
+                <LinearLayout
+                    android:id="@+id/llyt_test"
+                    style="@style/clickable_simple_item_llyt"
+                    android:visibility="gone">
+
+                    <Spinner
+                        android:id="@+id/spinner_test"
+                        android:layout_width="115dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_spinner"
+                        android:gravity="left|center_vertical" />
+
+                    <EditText
+                        android:id="@+id/et_test"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:hint="@string/choose_test"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:textColor="@color/app_text_color4"
+                        android:textColorHint="@color/app_text_color3"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/app_textsize" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view_test_line"
+                    style="@style/horizontal_line"
+                    android:layout_marginLeft="16dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:text="注：为了测评准确性请至少提供一门成绩"
+                    android:textColor="@color/app_text_color5"
+                    android:textSize="@dimen/app_text_size4" />
+
+                <Button
+                    android:id="@+id/btn_choose_school"
+                    style="@style/app_onebtn"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="24dp"
+                    android:text="开始测试" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <View
+                        style="@style/horizontal_line"
+                        android:layout_width="0dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/tv_has_test"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/app_text_color"
+                        android:textSize="@dimen/app_text_size5" />
+
+                    <View
+                        style="@style/horizontal_line"
+                        android:layout_width="0dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.smartstudy.commonlib.ui.customview.ReboundScrollView>
+
+
+</LinearLayout>

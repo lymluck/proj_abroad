@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/app_top_default"
+        android:id="@+id/top_thematic_center" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srlt_thematic_center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.smartstudy.commonlib.ui.customview.LoadMoreRecyclerView
+            android:id="@+id/rclv_thematic_center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.smartstudy.commonlib.ui.customview.LoadMoreRecyclerView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</LinearLayout>

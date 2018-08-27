@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_diaglog"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_basicdialog_titleh"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="titile"
+        android:textColor="@color/app_main_color"
+        android:textSize="@dimen/app_text_size1"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/cont_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dialog_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="content"
+            android:textColor="@color/app_text_title_color"
+            android:textSize="@dimen/app_text_size1" />
+
+        <EditText
+            android:id="@+id/dialog_edit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_basicdialog_inputh"
+            android:layout_marginBottom="@dimen/app_basicdialog_editmarginb"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/editdialog_bg"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/app_text_color"
+            android:textColorHint="@color/black20"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/app_text_size2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/negative_btn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/app_basicdialog_btnh"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn_lb_radius"
+            android:gravity="center"
+            android:text="button_2"
+            android:textColor="@color/text_cancel_color"
+            android:textSize="@dimen/app_text_size1" />
+
+        <Button
+            android:id="@+id/positive_btn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/app_basicdialog_btnh"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn_rb_radius"
+            android:gravity="center"
+            android:text="button_1"
+            android:textColor="@color/text_selected_color"
+            android:textSize="@dimen/app_text_size1" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

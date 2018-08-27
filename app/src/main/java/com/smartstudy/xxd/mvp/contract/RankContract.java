@@ -1,0 +1,35 @@
+package com.smartstudy.xxd.mvp.contract;
+
+import android.content.Context;
+
+import com.smartstudy.commonlib.entity.SchooolRankInfo;
+import com.smartstudy.commonlib.mvp.base.BasePresenter;
+import com.smartstudy.commonlib.mvp.base.BaseView;
+
+import java.util.List;
+
+/**
+ * Created by louis on 2017/3/1.
+ */
+
+public interface RankContract {
+
+    interface View extends BaseView<RankContract.Presenter> {
+
+        void getRankSuccess(List<SchooolRankInfo> data, int request_state);
+
+        void showEmptyView(android.view.View view);
+
+        void reload();
+
+    }
+
+    interface Presenter extends BasePresenter {
+
+        void getRank(int cacheType, String categoryId, int page, int request_state);
+
+        void showLoading(Context context, android.view.View emptyView);
+
+        void setEmptyView(android.view.View emptyView);
+    }
+}

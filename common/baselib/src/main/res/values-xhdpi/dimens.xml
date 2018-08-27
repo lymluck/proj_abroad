@@ -1,0 +1,59 @@
+<resources>
+    <dimen name="app_basicdialog_titleh">50dp</dimen><!-- 全局标准对话框标题高度 -->
+    <dimen name="app_basicdialog_inputh">50dp</dimen><!-- 全局标准对话框输入框高度 -->
+    <dimen name="app_basicdialog_btnh">45dp</dimen><!-- 全局标准对话框按钮高度 -->
+    <dimen name="app_basicdialog_infomarginb">20dp</dimen><!-- 全局标准对话框文本外下边距 -->
+    <dimen name="app_basicdialog_editmarginb">10dp</dimen><!-- 全局标准对话框输入框外下边距 -->
+    <dimen name="app_basicdialog_contpadding">20dp</dimen><!-- 全局标准对话框内容部分内边距 -->
+    <dimen name="simple_itemh">64dp</dimen> <!-- 简单列表单项高度-->
+    <dimen name="simple_item_titleh">38dp</dimen> <!-- 简单列表单项标题类高度-->
+    <dimen name="simple_item_paddingl">16dp</dimen> <!-- 简单列表单项左内边距-->
+    <dimen name="simple_item_paddingr">16dp</dimen> <!-- 简单列表单项右内边距-->
+    <dimen name="app_top_height">46dp</dimen>  <!-- app默认头部导航条高度 -->
+    <dimen name="app_top_leftright_btnimagewh">35dp</dimen>  <!-- app默认头部左边和右边按钮图片宽高-->
+    <dimen name="app_top_right_text_marginRight">20dp</dimen>   <!-- 头部布局文件中右边文字的内左或右边距 -->
+    <dimen name="app_top_right_btn_marginleft">16dp</dimen>  <!-- 头部布局文件中右边图片的内左边距 -->
+    <dimen name="app_top_right_btn_marginright">16dp</dimen>  <!-- 头部布局文件中右边图片的内右边距 -->
+    <dimen name="app_top_right_btn_marginleftright">8dp</dimen>  <!-- 头部布局文件中右边图片的内左或右边距 -->
+    <dimen name="app_top_leftright_textheight">30dp</dimen>  <!-- 头部布局文件中左或右边文字的高度-->
+    <dimen name="app_top_progressBar_wh">28dp</dimen>  <!-- top中间转圈进度条宽高 -->
+    <dimen name="app_main_tab_height">60dp</dimen>  <!-- 首页底部tab高度 -->
+    <dimen name="app_btn_paddingtb">5dp</dimen>  <!-- 全局按钮内上下边距值-->
+    <dimen name="app_btnh">45dp</dimen>  <!-- 全局按钮高度值-->
+    <dimen name="app_btn_margintop">30dp</dimen> <!-- 按钮距顶部高 -->
+    <dimen name="app_top_tab_h">42dp</dimen> <!-- 顶部tab高 -->
+    <dimen name="edittext_withclear_paddinglr">10dp</dimen>  <!-- 自定义带清除图标的edittext左右内边距 -->
+    <dimen name="edittext_withclear_clearimgwh">20dp</dimen>  <!-- 自定义带清除图标的edittext清除图标宽高 -->
+    <dimen name="edittext_withclear_clearimg_marginr">10dp
+    </dimen>  <!-- 自定义带清除图标的edittext清除图标外右边距 -->
+    <dimen name="item_rightbtnheight">30dp</dimen><!--右边按钮的高度  -->
+    <dimen name="pststab_paddinglr">21.2dp</dimen><!--PagerSlidingTabStrip内左右边距  -->
+    <dimen name="login_logo_wh">70dp</dimen><!--登录页面logo宽高  -->
+    <dimen name="login_logo_margin_t">30dp</dimen><!--登录页面logo上边距  -->
+    <dimen name="login_edittext_margin_t">45dp</dimen><!--登录页面edittext距logo上边距  -->
+    <dimen name="login_btn_margin_t">40dp</dimen><!--登录页面btn上边距  -->
+    <dimen name="login_contract_margin_t">120dp</dimen><!--登录页面协议上边距  -->
+    <dimen name="myinfo_avatar_h">250dp</dimen><!--个人中心页面图像高  -->
+    <dimen name="myinfo_camera_wh">44dp</dimen><!--个人中心页面拍照按钮宽高  -->
+    <dimen name="myinfo_camera_margin_t">-50dp</dimen><!--个人中心页面拍照按钮距顶部外边距  -->
+    <dimen name="about_xxd_img_wh">125dp</dimen><!--关于选校帝页面图片宽高  -->
+    <dimen name="add_myinfo_img_wh">90dp</dimen><!--完善个人信息页面图片宽高  -->
+    <dimen name="add_myinfo_img_margin_t">40dp</dimen><!--完善个人信息页面图片上边距  -->
+    <dimen name="add_myinfo_img_margin_b">35dp</dimen><!--完善个人信息页面图片下外边距  -->
+    <dimen name="notify_img_wh">32dp</dimen><!-- 下载更新通知栏logo宽高  -->
+    <dimen name="notify_img_ml">4dp</dimen><!-- 下载更新通知栏logo左外边距  -->
+    <dimen name="page_err_img_margin_t">90dp</dimen><!-- 异常页距离顶部外边距  -->
+    <!-- 选项式对话框距边框的距离 -->
+    <dimen name="popup_dialog_distance_to_edge">40dp</dimen>
+
+    <dimen name="app_main_tab_textsize">11sp</dimen> <!-- 主页tab文字大小 -->
+    <dimen name="app_textsize">16sp</dimen> <!-- app正文文本大小 -->
+    <dimen name="app_text_size1">17sp</dimen>  <!-- app头部标题文本大小 -->
+    <dimen name="app_text_size2">15sp</dimen>  <!-- 全局表单输入框字体大小 -->
+    <dimen name="app_text_size3">14sp</dimen>  <!-- 全局按钮背景可点击文字字体大小 -->
+    <dimen name="app_text_size4">13sp</dimen>  <!-- 提示文字 -->
+    <dimen name="app_text_size5">12sp</dimen>  <!-- 收藏页时间 -->
+    <dimen name="app_text_size6">10sp</dimen>  <!-- 结果页文字大小 -->
+    <!-- 收藏页时间文字大小 -->
+    <dimen name="app_text_size7">11sp</dimen>
+</resources>
