@@ -1,0 +1,50 @@
+[
+  {
+    "tagId": [
+    ],
+    "countryId": "",
+    "countryNumId": "",
+    "schoolType": "全球大学",
+    "countryName": "全球"
+  },
+  {
+    "tagId": [
+      23758
+    ],
+    "countryId": "COUNTRY_226",
+    "countryNumId": "226",
+    "schoolType": "美国大学",
+    "countryName": "美国",
+    "visaName": "美国签证"
+  },
+  {
+    "tagId": [
+      23759
+    ],
+    "countryId": "COUNTRY_225",
+    "countryNumId": "225",
+    "schoolType": "英国大学",
+    "countryName": "英国",
+    "visaName": "英国签证"
+  },
+  {
+    "tagId": [
+      23761
+    ],
+    "countryId": "COUNTRY_40",
+    "countryNumId": "40",
+    "schoolType": "加拿大大学",
+    "countryName": "加拿大",
+    "visaName": "加拿大签证"
+  },
+  {
+    "tagId": [
+      23760
+    ],
+    "countryId": "COUNTRY_16",
+    "countryNumId": "16",
+    "schoolType": "澳大利亚大学",
+    "countryName": "澳大利亚",
+    "visaName": "澳大利亚签证"
+  }
+]

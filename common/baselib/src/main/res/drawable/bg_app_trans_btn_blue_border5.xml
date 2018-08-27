@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 全局通栏按钮背景样式 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+        <shape>
+
+            <!-- 填充颜色 -->
+            <solid android:color="@color/transparent" />
+            <!-- 线的宽度，颜色灰色 -->
+            <stroke android:width="1dp" android:color="@color/app_main_color" />
+            <corners android:radius="5dp" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="@color/transparent" />
+
+            <stroke android:width="1dp" android:color="@color/app_main_color" />
+            <corners android:radius="5dp" />
+        </shape>
+    </item>
+
+</selector>

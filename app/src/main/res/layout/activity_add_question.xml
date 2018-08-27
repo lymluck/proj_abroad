@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.smartstudy.xxd.ui.activity.AddQuestionActivity">
+
+    <include layout="@layout/app_top_default" />
+
+    <EditText
+        android:id="@+id/et_qa"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:gravity="start"
+        android:hint="@string/hint_add_question"
+        android:lineSpacingExtra="3dp"
+        android:padding="16dp"
+        android:textColor="@color/app_text_color2"
+        android:textColorHint="@color/app_text_color3"
+        android:textCursorDrawable="@null"
+        android:textSize="@dimen/app_text_size2" />
+</LinearLayout>

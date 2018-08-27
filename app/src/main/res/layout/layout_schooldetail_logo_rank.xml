@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="284dp">
+
+    <ImageView
+        android:id="@+id/iv_school_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/cover_schooldetail" />
+
+    <RelativeLayout
+        android:id="@+id/rlyt_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp">
+
+        <ImageView
+            android:id="@+id/iv_school_logo"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_oval_white_size" />
+
+        <LinearLayout
+            android:id="@+id/llyt_local_rank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="45dp"
+            android:layout_toLeftOf="@id/iv_school_logo"
+            android:background="@drawable/bg_school_rank"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:text="国内排名"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+
+            <View
+                style="@style/horizontal_line"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_local_rank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="@dimen/app_text_size1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llyt_world_rank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="45dp"
+            android:layout_toRightOf="@id/iv_school_logo"
+            android:background="@drawable/bg_school_rank"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:text="国际排名"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+
+            <View
+                style="@style/horizontal_line"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_internal_rank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textSize="@dimen/app_text_size1" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_schoolname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlyt_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/white"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/tv_egname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_schoolname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/app_text_size4" />
+
+    <TextView
+        android:id="@+id/tv_addr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_egname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/app_text_size4" />
+</RelativeLayout>

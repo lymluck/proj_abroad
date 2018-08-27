@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="home_content_h">135dp</dimen> <!-- 首页内容区域高度 -->
+    <dimen name="home_rank_h">67dp</dimen> <!-- 首页内容区域排名区块高度 -->
+</resources>

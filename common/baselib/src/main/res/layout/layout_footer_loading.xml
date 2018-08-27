@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:indeterminate="false"
+        android:indeterminateDrawable="@drawable/pullup_loading" />
+
+    <TextView
+        android:id="@+id/loading_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="加载中，请稍后..."
+        android:textSize="@dimen/app_text_size3" />
+</merge>

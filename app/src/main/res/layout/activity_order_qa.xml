@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.smartstudy.xxd.ui.activity.OrderQaActivity">
+
+    <include layout="@layout/app_top_default" />
+
+    <com.smartstudy.commonlib.ui.customView.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_order_qa"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="4dp"
+                android:paddingLeft="22dp"
+                android:paddingRight="22dp"
+                android:paddingTop="22dp"
+                android:text="@string/tip_order_qa"
+                android:textColor="#A75A42"
+                android:textSize="@dimen/app_text_size4" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="24dp"
+                android:text="预约智课名师(名校学长/学姐)"
+                android:textColor="@color/app_text_color2"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="6dp"
+                android:text="享受一对一全留学领域的专业答疑！"
+                android:textColor="@color/app_text_color2"
+                android:textSize="@dimen/app_text_size1" />
+
+            <LinearLayout
+                android:id="@+id/llyt_order"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="46dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="32dp"
+                    android:background="@drawable/bg_app_btn_grey"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="预约日期"
+                        android:textColor="@color/app_text_color"
+                        android:textSize="@dimen/app_text_size2" />
+
+                    <TextView
+                        android:id="@+id/tv_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:hint="请选择预约日期"
+                        android:textColor="@color/app_text_color2"
+                        android:textColorHint="@color/app_text_color3"
+                        android:textSize="@dimen/app_text_size2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/bg_app_btn_grey"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="预约时间段"
+                        android:textColor="@color/app_text_color"
+                        android:textSize="@dimen/app_text_size2" />
+
+                    <TextView
+                        android:id="@+id/tv_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:hint="请选择预约时间段"
+                        android:textColor="@color/app_text_color2"
+                        android:textColorHint="@color/app_text_color3"
+                        android:textSize="@dimen/app_text_size2" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_now"
+                    style="@style/app_onebtn"
+                    android:layout_width="164dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="90dp"
+                    android:background="@drawable/bg_app_btn_radius_yellow"
+                    android:text="立即预约"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/app_textsize"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llyt_cardInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/commom_search_top_bg"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="24dp"
+                    android:drawableLeft="@drawable/ic_order_ok"
+                    android:drawablePadding="8dp"
+                    android:text="已预约成功"
+                    android:textColor="@color/mytest_txt_color"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="32dp"
+                    android:text="预约日期"
+                    android:textColor="@color/app_text_color"
+                    android:textSize="@dimen/app_text_size3" />
+
+                <View
+                    style="@style/horizontal_line"
+                    android:layout_width="185dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="4dp" />
+
+                <TextView
+                    android:id="@+id/tv_card_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="6dp"
+                    android:textColor="@color/app_text_color2"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="24dp"
+                    android:text="预约时间段"
+                    android:textColor="@color/app_text_color"
+                    android:textSize="@dimen/app_text_size3" />
+
+                <View
+                    style="@style/horizontal_line"
+                    android:layout_width="185dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="4dp" />
+
+                <TextView
+                    android:id="@+id/tv_card_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="6dp"
+                    android:textColor="@color/app_text_color2"
+                    android:textSize="22sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginTop="40dp"
+                    android:gravity="bottom"
+                    android:lineSpacingExtra="4dp"
+                    android:text="@string/tip_order"
+                    android:textColor="@color/app_text_color"
+                    android:textSize="@dimen/app_text_size5" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_service"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="32dp"
+                android:layout_marginTop="24dp"
+                android:text="查看智课留学服务>>"
+                android:textColor="@color/app_text_color"
+                android:textSize="@dimen/app_text_size3"
+                android:visibility="gone" />
+        </LinearLayout>
+    </com.smartstudy.commonlib.ui.customView.ReboundScrollView>
+
+</LinearLayout>

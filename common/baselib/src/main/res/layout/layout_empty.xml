@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/llyt_err"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_err"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="@dimen/page_err_img_margin_t"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_empty" />
+
+        <TextView
+            android:id="@+id/tv_err_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/page_empty_tip"
+            android:textColor="@color/app_text_color3"
+            android:textSize="@dimen/app_textsize" />
+
+        <Button
+            android:id="@+id/tv_refresh_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_app_trans_btn_blue_border5"
+            android:gravity="center"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:text="重新加载"
+            android:textColor="@color/app_main_color"
+            android:textSize="@dimen/app_text_size2"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/tv_qa_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/bg_app_trans_btn_blue_border5_solid"
+            android:gravity="center"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:text="＋ 我要提问"
+            android:textColor="@color/white"
+            android:textSize="@dimen/app_textsize"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_loading"
+        android:layout_width="56dp"
+        android:layout_height="46dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="210dp"
+        android:src="@drawable/gif_data_loading" />
+</FrameLayout>

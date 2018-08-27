@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_select_my_photo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+
+    <include
+        android:id="@+id/top_select_myphoto"
+        layout="@layout/app_top_default" />
+
+    <RelativeLayout
+        android:id="@+id/id_bottom_ly"
+        style="@style/clickable_simple_item_rlyt"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black50">
+
+        <TextView
+            android:id="@+id/id_choose_dir"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dip"
+            android:text="所有图片"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/app_text_size1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="33dp"
+            android:layout_toRightOf="@+id/id_choose_dir"
+            android:src="@drawable/ic_dir_arrow" />
+
+        <TextView
+            android:id="@+id/id_total"
+            android:layout_width="50dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/app_text_size1" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/id_gridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/id_bottom_ly"
+        android:layout_below="@id/top_select_myphoto" />
+
+
+</RelativeLayout>

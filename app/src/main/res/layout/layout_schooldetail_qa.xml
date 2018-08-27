@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/ic_go_qa"
+            android:text="留学问答"
+            android:textColor="@color/app_text_color2"
+            android:textSize="@dimen/app_text_size1" />
+
+    </LinearLayout>
+
+    <View style="@style/horizontal_line" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rlv_qa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:scrollbars="none" />
+
+    <View style="@style/horizontal_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:paddingBottom="30dp"
+        android:paddingTop="30dp">
+
+        <TextView
+            android:id="@+id/tv_more_qa"
+            android:layout_width="132dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/bg_app_trans_btn_schoolqa_border70"
+            android:gravity="center"
+            android:text="查看更多"
+            android:textColor="@color/mytest_txt_color"
+            android:textSize="@dimen/app_text_size2" />
+    </LinearLayout>
+</LinearLayout>

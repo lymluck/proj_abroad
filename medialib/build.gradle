@@ -1,0 +1,25 @@
+apply plugin: rootProject.ext.plugins.library
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+    defaultConfig {
+        multiDexEnabled true
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile rootProject.ext.dependencies.support
+    compile rootProject.ext.dependencies.ijkjava
+    compile rootProject.ext.dependencies.ijkx86
+    compile rootProject.ext.dependencies.ijkv7
+    compile rootProject.ext.dependencies.ijkv5
+
+    compile project(':common:baselib')
+}

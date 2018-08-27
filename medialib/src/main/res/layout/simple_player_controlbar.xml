@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_bottom_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shadow_b_to_t"
+    android:gravity="center_vertical"
+    android:minHeight="48dp"
+    android:paddingBottom="4dp"
+    android:paddingLeft="10dp"
+    android:paddingTop="4dp">
+
+    <LinearLayout
+        android:id="@+id/app_video_process_panl"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/app_video_currentTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="00:00"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/app_text_size3"
+            android:visibility="visible" />
+
+        <SeekBar
+            android:id="@+id/app_video_seekBar"
+            style="@style/SeekBarAppTheme"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:thumbOffset="0dp" />
+
+
+        <TextView
+            android:id="@+id/app_video_endTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="10:10"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/app_text_size3" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/app_video_stream"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="8dp"
+        android:text="标清"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/app_text_size3" />
+
+    <ImageView
+        android:id="@+id/ijk_iv_rotation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:src="@drawable/simple_player_iv_rotation" />
+
+    <ImageView
+        android:id="@+id/app_video_fullscreen"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingBottom="10dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="10dp"
+        android:paddingTop="12dp"
+        android:src="@drawable/simple_player_icon_fullscreen_stretch" />
+
+</LinearLayout>

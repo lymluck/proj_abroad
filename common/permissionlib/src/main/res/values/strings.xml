@@ -1,0 +1,7 @@
+<resources>
+    <string name="rationale_ask_again">选校帝使用电话权限确定本机号码和设备ID，不会拨打其它号码或终止通话。\n请在设置－应用－选校帝－权限管理中开启%1$s权限，以正常使用选校帝功能</string>
+    <string name="rationale_ask_permission">检测到需要开启权限，为正常使用选校帝，请在设置－应用－选校帝－权限管理中查看是否有权限未开启</string>
+    <string name="title_settings_dialog">开启权限</string>
+    <string name="to_setting">去开启</string>
+    <string name="to_cancle">取消</string>
+</resources>

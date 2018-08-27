@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.smartstudy.xxd.ui.activity.SrtSpecialResultActivity">
+
+    <include layout="@layout/app_top_default" />
+
+    <com.smartstudy.commonlib.ui.customView.MyScrollview
+        android:id="@+id/ms_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/main_bg"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:background="@color/white"
+                android:gravity="center_horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="20dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_special_left" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center"
+                    android:background="@color/mytest_txt_color"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="4dp"
+                    android:text="我的测试得分"
+                    android:textColor="@color/white"
+                    android:textSize="22sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_special_right" />
+            </LinearLayout>
+
+            <com.smartstudy.commonlib.ui.customView.RadarView
+                android:id="@+id/rc_result"
+                android:layout_width="match_parent"
+                android:layout_height="330dp"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                app:max_value="100"
+                app:radar_bg_color="@color/main_bg"
+                app:radar_layer="6"
+                app:radar_line_color="@color/horizontal_line_color"
+                app:radar_line_width="1dp"
+                app:rotation_enable="false"
+                app:vertex_text_color="@color/app_text_color2"
+                app:vertex_text_size="@dimen/app_text_size5" />
+
+            <LinearLayout
+                android:id="@+id/llyt_spe_rst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/white"
+                android:orientation="vertical" />
+
+            <TextView
+                android:id="@+id/tv_command"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="推荐学校"
+                android:textColor="@color/app_text_color2"
+                android:textSize="@dimen/app_text_size1" />
+
+            <View
+                android:id="@+id/view_command"
+                style="@style/horizontal_line" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rclv_spe_rlt"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="24dp"
+                android:layout_marginTop="16dp"
+                android:text="说明：测试结果仅供参考，如果对测试结果或者选校有任何疑问，欢迎咨询选校帝留学顾问！"
+                android:textColor="@color/app_text_color"
+                android:textSize="@dimen/app_text_size4" />
+        </LinearLayout>
+
+    </com.smartstudy.commonlib.ui.customView.MyScrollview>
+
+    <View style="@style/horizontal_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_share"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/ic_share"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:text="分享"
+            android:textColor="@color/app_main_color"
+            android:textSize="@dimen/app_text_size6" />
+
+        <TextView
+            android:id="@+id/tv_add"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/ic_add_school"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:text="一键加入选校"
+            android:textColor="@color/app_main_color"
+            android:textSize="@dimen/app_text_size6" />
+
+        <TextView
+            android:id="@+id/tv_ask"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/ic_meiqia_ask"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:text="在线咨询"
+            android:textColor="@color/app_main_color"
+            android:textSize="@dimen/app_text_size6" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MQMatchMatch"
+    android:background="@color/mq_photo_activity_bg"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+
+    <com.meiqia.meiqiasdk.widget.MQHackyViewPager
+        android:id="@+id/content_hvp"
+        style="@style/MQMatchMatch" />
+
+    <RelativeLayout
+        android:id="@+id/title_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mq_title_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/back_iv"
+            style="@style/MQWrapMatch"
+            android:paddingLeft="@dimen/mq_size_level3"
+            android:paddingRight="@dimen/mq_size_level3"
+            android:src="@drawable/ic_go_back" />
+
+        <TextView
+            android:id="@+id/title_tv"
+            style="@style/MQWrapMatch"
+            android:layout_toRightOf="@id/back_iv"
+            android:gravity="center_vertical"
+            android:textColor="@color/app_text_color2"
+            android:textSize="@dimen/app_text_size1"
+            tools:text="@string/mq_view_photo" />
+
+        <ImageView
+            android:id="@+id/download_iv"
+            style="@style/MQWrapMatch"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="@dimen/mq_size_level3"
+            android:paddingRight="@dimen/mq_size_level3"
+            android:src="@drawable/mq_ic_download_gray" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

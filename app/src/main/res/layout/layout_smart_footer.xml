@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:text="说明：测试结果仅供参考，如果对测试结果或者选校有任何疑问，欢迎咨询选校帝留学顾问！"
+        android:textColor="@color/app_text_color"
+        android:textSize="@dimen/app_text_size4" />
+</LinearLayout>

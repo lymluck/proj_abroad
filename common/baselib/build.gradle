@@ -1,0 +1,66 @@
+apply plugin: rootProject.ext.plugins.library
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+    defaultConfig {
+        multiDexEnabled true
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+
+        resValue("string", "growingio_project_id", "87ee52fe34f15339")
+        resValue("string", "growingio_url_scheme", "growing.4b8159748a6022e9")
+
+    }
+
+    buildTypes {
+        release {
+            zipAlignEnabled true
+            shrinkResources true  // 移除无用的resource文件
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile rootProject.ext.dependencies.support
+    compile rootProject.ext.dependencies.design
+    compile rootProject.ext.dependencies.glide
+    compile rootProject.ext.dependencies.glide_okhttp
+    compile rootProject.ext.dependencies.nineoldandroids
+    compile rootProject.ext.dependencies.fastjson
+    compile rootProject.ext.dependencies.recyclerview
+    compile rootProject.ext.dependencies.cardview
+    compile rootProject.ext.dependencies.kenburnsview
+    compile rootProject.ext.dependencies.uapp
+    compile rootProject.ext.dependencies.palette
+    compile rootProject.ext.dependencies.okhttp
+    compile rootProject.ext.dependencies.growingIO
+    compile rootProject.ext.dependencies.eventbus
+    compile rootProject.ext.dependencies.walle
+    //无需引入tinker的任何库,使用tinkerpatch sdk即可
+    compile("com.tinkerpatch.sdk:tinkerpatch-android-sdk:${TINKERPATCH_VERSION}") {
+        changing = true
+    }
+    compile project(':common:permissionlib')
+    compile project(':xxdRouter')
+    compile project(':xxdAnnotation')
+    compile files('libs/SocialSDK_QQ_Simplify.jar')
+    compile files('libs/SocialSDK_Sina_Simplify.jar')
+    compile files('libs/SocialSDK_WeChat_Simplify.jar')
+    compile files('libs/umeng_shareboard_widget.jar')
+    compile files('libs/umeng_social_api.jar')
+    compile files('libs/umeng_social_net.jar')
+    compile files('libs/umeng_social_shareboard.jar')
+    compile files('libs/umeng_social_shareview.jar')
+    compile files('libs/umeng_social_tool.jar')
+    compile files('libs/meiqia-v3.4.5.jar')
+    compile files('libs/jcore-android-1.1.6.jar')
+    compile files('libs/jpush-android-3.0.8.jar')
+    compile "com.facebook.react:react-native:+"  // From node_modules
+
+}

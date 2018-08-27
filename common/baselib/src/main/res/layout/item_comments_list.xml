@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view_comment"
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <ImageView
+            android:id="@+id/iv_user_avatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/ic_person_default" />
+
+        <com.smartstudy.commonlib.ui.customView.RatingBar
+            android:id="@+id/rb_course_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4dp"
+            app:clickable="false"
+            app:starCount="5"
+            app:starEmpty="@drawable/ic_star_gray"
+            app:starFill="@drawable/ic_star_blue"
+            app:starHalf="@drawable/ic_star_half"
+            app:starImageSize="14dp"
+            app:starStep="0"
+            app:stepSize="Half" />
+
+        <LinearLayout
+            android:id="@+id/llyt_teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/rb_course_rate"
+            android:layout_toRightOf="@id/iv_user_avatar"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/app_text_color2"
+                android:textSize="@dimen/app_textsize" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/app_text_color3"
+                android:textSize="@dimen/app_text_size5" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/etv_user_intro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/llyt_teacher"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@id/iv_user_avatar"
+            android:lineSpacingExtra="4dp"
+            android:textColor="@color/app_text_color1"
+            android:textSize="@dimen/app_text_size3" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line_comment"
+        style="@style/horizontal_line"
+        android:layout_marginLeft="64dp" />
+</LinearLayout>

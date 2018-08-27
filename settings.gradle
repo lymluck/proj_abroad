@@ -1,0 +1,2 @@
+include ':xxdAnnotation', ':xxdCompiler', ':buildSrc'
+include 'app', ':medialib', ':meiqiasdk', ':common:baselib', ':common:permissionlib', ':xxdRouter'

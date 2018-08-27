@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <View style="@style/horizontal_line" />
+
+    <LinearLayout
+        android:id="@+id/llyt_tab"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_tab_school"
+            style="@style/main_tab_style"
+            android:drawableTop="@drawable/tab_schools_bg"
+            android:text="@string/school" />
+
+        <TextView
+            android:id="@+id/tv_tab_course"
+            style="@style/main_tab_style"
+            android:drawableTop="@drawable/tab_course_bg"
+            android:text="@string/course" />
+
+        <TextView
+            android:id="@+id/tv_tab_news"
+            style="@style/main_tab_style"
+            android:drawableTop="@drawable/tab_news_bg"
+            android:text="@string/news" />
+
+        <TextView
+            android:id="@+id/tv_tab_qa"
+            style="@style/main_tab_style"
+            android:drawableTop="@drawable/tab_qa_bg"
+            android:text="@string/qa" />
+
+        <RelativeLayout
+            android:id="@+id/rlyt_me"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/tv_tab_me"
+                style="@style/main_tab_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:clickable="false"
+                android:drawableTop="@drawable/tab_me_bg"
+                android:text="@string/me" />
+
+            <TextView
+                android:id="@+id/tab_me_red"
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:layout_above="@id/tv_tab_me"
+                android:layout_marginBottom="-10dp"
+                android:layout_marginLeft="-5dp"
+                android:layout_toRightOf="@id/tv_tab_me"
+                android:background="@drawable/bg_oval_red"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

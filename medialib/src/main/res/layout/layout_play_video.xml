@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/app_video_box"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+
+    <com.smartstudy.medialib.ijkplayer.widget.IjkVideoView
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- 封面显示-->
+    <LinearLayout
+        android:id="@+id/ll_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_trumb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <!--重新播放-->
+    <LinearLayout
+        android:id="@+id/app_video_replay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@color/black80"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <!-- 播放状态-->
+        <ImageView
+            android:id="@+id/app_video_replay_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/simple_player_circle_outline_white_36dp" />
+
+        <TextView
+            android:id="@+id/app_video_status_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/small_problem"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/app_text_size3" />
+    </LinearLayout>
+
+    <!-- 网络提示-->
+    <LinearLayout
+        android:id="@+id/app_video_netTie"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black80"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="您正在使用移动网络播放视频\n可能产生较高流量费用"
+            android:textColor="@color/white"
+            android:textSize="@dimen/app_text_size3" />
+
+        <TextView
+            android:id="@+id/app_video_netTie_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_app_trans_btn_blue_border5"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingTop="4dp"
+            android:text="继续"
+            android:textColor="@color/white"
+            android:textSize="@dimen/app_text_size3" />
+    </LinearLayout>
+
+    <!-- 未登录最大试看时长提示-->
+    <LinearLayout
+        android:id="@+id/app_video_nologinT"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black80"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="试看时间已到请登录后继续观看"
+            android:textColor="@color/white"
+            android:textSize="@dimen/app_textsize" />
+
+        <TextView
+            android:id="@+id/app_video_nologin_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_app_trans_btn_blue_border5"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingTop="4dp"
+            android:text="登录"
+            android:textColor="@color/white"
+            android:textSize="@dimen/app_textsize" />
+    </LinearLayout>
+
+    <!-- 为付费最大试看时长提示-->
+    <LinearLayout
+        android:id="@+id/app_video_freeTie"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black80"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="试看时间已到请购买继续观看"
+            android:textColor="@color/white"
+            android:textSize="@dimen/app_textsize" />
+
+        <TextView
+            android:id="@+id/app_video_freeTie_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_app_trans_btn_blue_border5"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingTop="4dp"
+            android:text="购买"
+            android:textColor="@color/white"
+            android:textSize="@dimen/app_textsize" />
+    </LinearLayout>
+
+    <!--加载中-->
+    <LinearLayout
+        android:id="@+id/app_video_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:indeterminateBehavior="repeat"
+            android:indeterminateDrawable="@drawable/pullup_loading"
+            android:indeterminateOnly="true" />
+
+        <TextView
+            android:id="@+id/app_video_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="188Kb/s"
+            android:textColor="@color/white"
+            android:textSize="@dimen/app_text_size3"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!-- 中间触摸提示-->
+    <include
+        layout="@layout/simple_player_touch_gestures"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+
+    <!--分辨率选择-->
+    <LinearLayout
+        android:id="@+id/simple_player_select_stream_container"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@color/black20"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <ListView
+            android:id="@+id/simple_player_select_streams_list"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/play_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/simple_player_center_play" />
+
+    <!-- 顶部栏-->
+    <include layout="@layout/simple_player_topbar" />
+    <!-- 底部栏-->
+    <include
+        layout="@layout/simple_player_controlbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

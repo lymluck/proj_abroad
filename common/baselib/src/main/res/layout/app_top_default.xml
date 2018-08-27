@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 默认头部布局，布局组成左边图片按钮，中间标题，右边图片按钮 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlyt_top"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/app_top_height"
+    android:background="@color/app_top_color">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="left|center_vertical"
+            android:minWidth="@dimen/app_top_leftright_btnimagewh">
+
+            <ImageView
+                android:id="@+id/topdefault_leftbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:clickable="true"
+                android:paddingLeft="@dimen/app_top_right_btn_marginleft"
+                android:paddingRight="@dimen/app_top_right_btn_marginleftright"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_go_back" />
+
+            <TextView
+                android:id="@+id/topdefault_lefttext"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/app_top_right_btn_marginleftright"
+                android:textColor="@color/topcentertext"
+                android:textSize="@dimen/app_textsize"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/topdefault_lefttitle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/app_top_right_btn_marginleftright"
+                android:text="关闭"
+                android:textColor="@color/topcentertext"
+                android:textSize="@dimen/app_textsize"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/llyt_top_center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/app_top_leftright_btnimagewh"
+            android:layout_marginRight="@dimen/app_top_leftright_btnimagewh"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/topdefault_centertitle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:drawablePadding="6dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:maxWidth="220dp"
+                android:textColor="@color/topcentertext"
+                android:textSize="@dimen/app_text_size1" />
+
+            <ProgressBar
+                android:id="@+id/top_progressBar"
+                android:layout_width="@dimen/app_top_progressBar_wh"
+                android:layout_height="@dimen/app_top_progressBar_wh"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/app_top_right_btn_marginleftright"
+                android:layout_toLeftOf="@id/topdefault_centertitle"
+                android:indeterminate="false"
+                android:indeterminateDrawable="@drawable/top_loading"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="right|center_vertical"
+            android:minWidth="@dimen/app_top_leftright_btnimagewh">
+
+            <TextView
+                android:id="@+id/topdefault_righttext"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:paddingRight="@dimen/app_top_right_btn_marginright"
+                android:textColor="@color/topcentertext"
+                android:textSize="@dimen/app_textsize"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/topdefault_rightbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:clickable="true"
+                android:paddingLeft="@dimen/app_top_right_btn_marginleftright"
+                android:paddingRight="@dimen/app_top_right_btn_marginright"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_menu"
+                android:transitionName="btn_tr"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/topdefault_rightmenu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/app_top_right_btn_marginright"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:textColor="@color/topcentertext"
+                android:textSize="@dimen/app_textsize"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/top_line"
+        style="@style/horizontal_line"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <com.smartstudy.commonlib.ui.customView.rollviewpager.RollPagerView
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:rollviewpager_play_delay="3000" />
+
+    <include
+        android:id="@+id/llyt_header_grid"
+        layout="@layout/layout_home_header_grid" />
+
+    <LinearLayout
+        android:id="@+id/llyt_home_rank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/view_rank"
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingBottom="18dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:id="@+id/tv_type_name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingTop="4dp"
+                    android:text="热门排名"
+                    android:textColor="@color/app_text_color2"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:id="@+id/tv_see_more_rank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:drawablePadding="4dp"
+                    android:drawableRight="@drawable/ic_home_arrow_rg"
+                    android:gravity="center_vertical"
+                    android:paddingTop="4dp"
+                    android:text="查看更多"
+                    android:textColor="@color/app_text_color"
+                    android:textSize="@dimen/app_text_size4" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/layout_home_header_hot_rank" />
+    </LinearLayout>
+</LinearLayout>

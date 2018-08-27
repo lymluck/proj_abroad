@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+
+    <external-path
+        name="xxd/file"
+        path="Android/data/com.smartstudy.xxd/" />
+
+    <external-path
+        name="xxd/camera_photos"
+        path="." />
+
+    <root-path
+        name="xxd/root"
+        path="." />
+</paths>

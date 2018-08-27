@@ -1,0 +1,70 @@
+<com.smartstudy.commonlib.ui.customView.VerticalSwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/srfl_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcv_hots"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/llyt_home_top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_top_height"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:transitionName="search_top">
+
+            <LinearLayout
+                android:id="@+id/llyt_home_search"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/bg_raduis_search_white95"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/search_gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/search"
+                    android:textColor="@color/app_text_color3"
+                    android:textSize="@dimen/app_text_size3" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/top_line"
+            style="@style/horizontal_line"
+            android:layout_below="@id/llyt_home_top"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/llyt_loading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rcv_hots"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <include layout="@layout/layout_footer_loading" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</com.smartstudy.commonlib.ui.customView.VerticalSwipeRefreshLayout>

@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_bg"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/ic_intro_blue"
+        android:drawablePadding="6dp"
+        android:text="不知道去哪儿？来看看它们之间的区别吧"
+        android:textColor="@color/app_main_color"
+        android:textSize="@dimen/app_text_size4" />
+
+</LinearLayout>

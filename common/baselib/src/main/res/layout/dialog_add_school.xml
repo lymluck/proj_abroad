@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/default_dialog_style"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        style="@style/dialog_msg_alert_txt_style"
+        android:layout_height="72dp"
+        android:background="@drawable/bg_btn_lrt_radius"
+        android:textStyle="bold" />
+
+    <View style="@style/horizontal_line" />
+
+    <LinearLayout
+        android:id="@+id/llyt_top"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/simple_item_bg"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/bg_oval_red_size"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="37dp"
+            android:text="冲刺院校" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llyt_mid"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/simple_item_bg"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/bg_oval_blue_size"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="37dp"
+            android:text="核心院校" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llyt_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/bg_btn_w_lrb_radius"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/bg_oval_green_size"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="37dp"
+            android:text="保底院校" />
+    </LinearLayout>
+
+</LinearLayout>

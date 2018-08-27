@@ -1,0 +1,131 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 全局样式 -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@null</item>
+    </style>
+
+    <style name="AppSplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@drawable/img_splash</item>
+    </style>
+    <!-- 全局标准对话框 -->
+    <style name="appBasicDialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="BottomTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowAnimationStyle">@style/BottomAnimationStyle</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/black15</item>
+    </style>
+    <!-- 从底部弹出动画 -->
+    <style name="BottomAnimationStyle" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_bottom_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_bottom_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_bottom_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_bottom_out</item>
+    </style>
+
+    <style name="AppDialogActivityTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/black20</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!-- app全局横向分割线样式 -->
+    <style name="horizontal_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/horizontal_line_color</item>
+    </style>
+    <!-- app全局竖向分割线样式 -->
+    <style name="vertical_line">
+        <item name="android:layout_width">0.5dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/horizontal_line_color</item>
+    </style>
+    <!-- 单项llyt列表样式 -->
+    <style name="simple_item_llyt">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/simple_itemh</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/simple_item_paddingl</item>
+        <item name="android:paddingRight">@dimen/simple_item_paddingr</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <!-- 可点击变色llyt列表样式 -->
+    <style name="clickable_simple_item_llyt" parent="@style/simple_item_llyt">
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/simple_item_bg</item>
+    </style>
+    <!-- 单项rlyt列表样式 -->
+    <style name="simple_item_rlyt">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/simple_itemh</item>
+        <item name="android:paddingLeft">@dimen/simple_item_paddingl</item>
+        <item name="android:paddingRight">@dimen/simple_item_paddingr</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <!-- 可点击变色rlyt列表样式 -->
+    <style name="clickable_simple_item_rlyt" parent="@style/simple_item_rlyt">
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/simple_item_bg</item>
+    </style>
+    <!-- app全局通栏按钮样式 -->
+    <style name="app_onebtn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/app_btnh</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">@dimen/app_btn_paddingtb</item>
+        <item name="android:paddingBottom">@dimen/app_btn_paddingtb</item>
+        <item name="android:background">@drawable/bg_main_btn_radius</item>
+        <item name="android:textColor">@drawable/btn_text_selected_color</item>
+        <item name="android:layout_marginTop">@dimen/app_btn_margintop</item>
+        <item name="android:textSize">@dimen/app_textsize</item>
+    </style>
+
+    <style name="dialog_msg_alert_txt_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">30dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:textSize">@dimen/app_text_size1</item>
+        <item name="android:textColor">@color/app_main_color</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+
+    <style name="default_dialog_style">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowBackground">@color/item_click_tran20</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:radius">5dp</item>
+    </style>
+
+    <style name="XxdTabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/app_text_color</item>
+    </style>
+
+    <!-- 录取率测试结果星级控件样式 -->
+    <style name="fiveRatingBar_rate" parent="@android:style/Widget.Holo.RatingBar.Indicator">
+        <item name="android:progressDrawable">@drawable/five_rating_bar_rate</item>
+        <item name="android:minHeight">36dp</item>
+        <item name="android:maxHeight">36dp</item>
+    </style>
+
+
+    <style name="Transparent" parent="android:Theme.Light">
+        <!--将Activity的Theme设置成透明-->
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+</resources>

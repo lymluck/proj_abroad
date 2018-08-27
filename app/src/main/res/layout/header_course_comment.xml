@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlyt_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <com.smartstudy.commonlib.ui.customView.RatingBar
+            android:id="@+id/rb_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            app:clickable="false"
+            app:starCount="5"
+            app:starEmpty="@drawable/ic_star_gray"
+            app:starFill="@drawable/ic_star_blue"
+            app:starHalf="@drawable/ic_star_half"
+            app:starImageSize="29dp"
+            app:starPadding="11dp"
+            app:starStep="0"
+            app:stepSize="Half" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rb_comment"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="32dp"
+            android:layout_marginTop="24dp"
+            android:text="评价该课程"
+            android:textColor="@color/app_text_color"
+            android:textSize="@dimen/app_text_size3" />
+
+        <View
+            android:id="@+id/view_rating"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="@color/transparent" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="@color/main_bg" />
+
+    <TextView
+        android:id="@+id/tv_course_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="16dp"
+        android:text="评价详情（0人）"
+        android:textColor="@color/app_text_color"
+        android:textSize="@dimen/app_text_size3" />
+</LinearLayout>

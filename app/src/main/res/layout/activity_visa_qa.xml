@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.smartstudy.xxd.ui.activity.RankTypeActivity">
+
+    <include layout="@layout/app_top_default" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rclv_visa_qa"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:overScrollMode="always" />
+
+    <TextView
+        android:id="@+id/tv_add_qa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_app_btn_no_border"
+        android:clickable="true"
+        android:gravity="center"
+        android:paddingBottom="17dp"
+        android:paddingTop="17dp"
+        android:text="我有问题"
+        android:textColor="@color/white"
+        android:textSize="@dimen/app_text_size2" />
+</LinearLayout>
