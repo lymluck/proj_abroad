@@ -163,3 +163,6 @@
   
    http://jd.benow.ca/
  * 反编译资源：Android studio自带的apktool
+
+ ## 解决重复依赖
+ * gradlew -q app:dependencies
